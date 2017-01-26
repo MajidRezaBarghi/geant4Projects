@@ -1,0 +1,2 @@
+/home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1-build/CMakeFiles/Proj1.dir
+/home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1-build/CMakeFiles/exProj1.dir

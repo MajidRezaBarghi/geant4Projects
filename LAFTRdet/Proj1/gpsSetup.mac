@@ -1,0 +1,15 @@
+/vis/viewer/set/autoRefresh true
+/vis/verbose warnings
+/gps/verbose 1
+/gps/particle gamma
+/gps/pos/type Plane
+/gps/pos/shape Square
+/gps/pos/centre 1 2 1 cm
+/gps/pos/halfx 2 cm
+/gps/pos/halfy 2 cm
+/gps/ang/type cos
+/gps/ene/type Lin
+/gps/ene/min 2 MeV
+/gps/ene/max 10 MeV
+/gps/ene/gradient 1
+/gps/ene/intercept 1

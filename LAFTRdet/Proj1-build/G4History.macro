@@ -1,58 +1,41 @@
-#Majid Reza Barghi
-#LAFTR
-#Proj1
-#simple .mac file
-##this is my vismac file!
-# in interactive session
-#
-# Set some default verbose
-/control/verbose 2
-/control/saveHistory
 /run/verbose 2
-#
-# Change the default number of threads (in multi-threaded mode)
-#/run/numberOfThreads 4
-#
-# Initialize kernel
 /run/initialize
-#
-#open up the graphics
-
-#This is where you set up the scoring volume
-#We are creating a scoring volume as the same size as our
-#scintillator
-###############################
 /vis/open OGL
+/vis/sceneHandler/create OGL
+/vis/viewer/create ! ! 600
+/vis/viewer/refresh
 /vis/drawVolume world
+/vis/scene/create
+/vis/scene/add/volume world
+/vis/sceneHandler/attach
 /vis/viewer/set/viewpointThetaPhi 105 165
+/vis/viewer/refresh
 /vis/viewer/zoom 1.5
-
-# Draw smooth trajectories at end of event, showing trajectory points
-# as markers 2 pixels wide:
-
+/vis/viewer/refresh
 /vis/scene/add/trajectories smooth
+/tracking/storeTrajectory 2
+/vis/scene/notifyHandlers
 /vis/modeling/trajectories/create/drawByCharge
 /vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/scene/notifyHandlers scene-0
 /vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
-
-# To superimpose all of the events from a given run:
+/vis/scene/notifyHandlers scene-0
 /vis/scene/endOfEventAction accumulate
-
 /score/create/cylinderMesh Scint
 /score/mesh/cylinderSize 33 50 mm
 /score/mesh/nBin 30 30 30
 /score/quantity/energyDeposit eDep MeV
 /score/close
-#Setting up the particle gun with General particle source
-###########################
 /gps/particle gamma
 /gps/ene/type Mono
 /gps/ene/mono 500 MeV
-
 /gps/pos/type Plane
 /gps/pos/shape Square
 /gps/pos/halfx 25 cm
 /gps/pos/halfy 25 cm
 /gps/pos/centre 0 0 -50 cm
-
 /gps/direction 0 0 1
+/run/beamOn 10
+/run/geometryModified
+/vis/scene/notifyHandlers scene-0
+/gps/ene/calculate

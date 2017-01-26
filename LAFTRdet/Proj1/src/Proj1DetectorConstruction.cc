@@ -79,7 +79,7 @@ G4VPhysicalVolume* Proj1DetectorConstruction::Construct()
                         Scint_mat,
                         "Scint");
     new G4PVPlacement(0,
-                      G4ThreeVector(0,2*cm,7*cm),
+                      G4ThreeVector(0,0*cm,0*cm),
                       logicScint,
                       "Scint",
                       logicWorld,

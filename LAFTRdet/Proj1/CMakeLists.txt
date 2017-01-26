@@ -45,8 +45,6 @@ target_link_libraries(exProj1 ${Geant4_LIBRARIES})
 
 set(EXAMPLEB1_SCRIPTS
   init_vis.mac
-  vis.mac
-  run1.mac
   )
 
 foreach(_script ${EXAMPLEB1_SCRIPTS})

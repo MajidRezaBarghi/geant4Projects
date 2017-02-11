@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/exProj1.dir/exProj1.cc.o"
   "CMakeFiles/exProj1.dir/src/Proj1DetectorConstruction.cc.o"
-  "CMakeFiles/exProj1.dir/src/myPhysicsList.cc.o"
   "CMakeFiles/exProj1.dir/src/Proj1PrimaryGeneratorAction.cc.o"
   "CMakeFiles/exProj1.dir/src/Proj1ActionInitialization.cc.o"
   "exProj1.pdb"

@@ -2,7 +2,7 @@
 #include "Proj1DetectorConstruction.hh"
 // #include "Proj1ActionInitialization.hh"
 #include "Proj1PrimaryGeneratorAction.hh"
-#include "myPhysicsList.hh"
+// #include "myPhysicsList.hh"
 
 #ifdef G4MULTITHREADED
 #include "G4MTRunManager.hh"
@@ -48,11 +48,11 @@ int main(int argc,char** argv)
   runManager->SetUserInitialization(new Proj1DetectorConstruction());
 
   // Physics list
-  // G4VModularPhysicsList* physicsList = new QBBC;
-  // physicsList->SetVerboseLevel(1);
-  myPhysicsList* physicslist = new myPhysicsList();
-  runManager->SetUserInitialization(physicslist);
-  // runManager->SetUserInitialization(physicsList);// #include "Proj1RunAction.hh"
+  G4VModularPhysicsList* physicsList = new QBBC;
+  physicsList->SetVerboseLevel(1);
+  //myPhysicsList* physicslist = new myPhysicsList();
+  //runManager->SetUserInitialization(physicslist);
+  runManager->SetUserInitialization(physicsList);// #include "Proj1RunAction.hh"
 // #include "Proj1EventAction.hh"
   //Whenever you set a primary generator action you must set the user action. However this can be done in an action
   // Initilization file.

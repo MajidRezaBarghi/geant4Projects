@@ -105,33 +105,9 @@ CMakeFiles/exProj1.dir/src/Proj1DetectorConstruction.cc.o.provides: CMakeFiles/e
 CMakeFiles/exProj1.dir/src/Proj1DetectorConstruction.cc.o.provides.build: CMakeFiles/exProj1.dir/src/Proj1DetectorConstruction.cc.o
 
 
-CMakeFiles/exProj1.dir/src/myPhysicsList.cc.o: CMakeFiles/exProj1.dir/flags.make
-CMakeFiles/exProj1.dir/src/myPhysicsList.cc.o: /home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1/src/myPhysicsList.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exProj1.dir/src/myPhysicsList.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exProj1.dir/src/myPhysicsList.cc.o -c /home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1/src/myPhysicsList.cc
-
-CMakeFiles/exProj1.dir/src/myPhysicsList.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exProj1.dir/src/myPhysicsList.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1/src/myPhysicsList.cc > CMakeFiles/exProj1.dir/src/myPhysicsList.cc.i
-
-CMakeFiles/exProj1.dir/src/myPhysicsList.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exProj1.dir/src/myPhysicsList.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1/src/myPhysicsList.cc -o CMakeFiles/exProj1.dir/src/myPhysicsList.cc.s
-
-CMakeFiles/exProj1.dir/src/myPhysicsList.cc.o.requires:
-
-.PHONY : CMakeFiles/exProj1.dir/src/myPhysicsList.cc.o.requires
-
-CMakeFiles/exProj1.dir/src/myPhysicsList.cc.o.provides: CMakeFiles/exProj1.dir/src/myPhysicsList.cc.o.requires
-	$(MAKE) -f CMakeFiles/exProj1.dir/build.make CMakeFiles/exProj1.dir/src/myPhysicsList.cc.o.provides.build
-.PHONY : CMakeFiles/exProj1.dir/src/myPhysicsList.cc.o.provides
-
-CMakeFiles/exProj1.dir/src/myPhysicsList.cc.o.provides.build: CMakeFiles/exProj1.dir/src/myPhysicsList.cc.o
-
-
 CMakeFiles/exProj1.dir/src/Proj1PrimaryGeneratorAction.cc.o: CMakeFiles/exProj1.dir/flags.make
 CMakeFiles/exProj1.dir/src/Proj1PrimaryGeneratorAction.cc.o: /home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1/src/Proj1PrimaryGeneratorAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/exProj1.dir/src/Proj1PrimaryGeneratorAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exProj1.dir/src/Proj1PrimaryGeneratorAction.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exProj1.dir/src/Proj1PrimaryGeneratorAction.cc.o -c /home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1/src/Proj1PrimaryGeneratorAction.cc
 
 CMakeFiles/exProj1.dir/src/Proj1PrimaryGeneratorAction.cc.i: cmake_force
@@ -155,7 +131,7 @@ CMakeFiles/exProj1.dir/src/Proj1PrimaryGeneratorAction.cc.o.provides.build: CMak
 
 CMakeFiles/exProj1.dir/src/Proj1ActionInitialization.cc.o: CMakeFiles/exProj1.dir/flags.make
 CMakeFiles/exProj1.dir/src/Proj1ActionInitialization.cc.o: /home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1/src/Proj1ActionInitialization.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/exProj1.dir/src/Proj1ActionInitialization.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/exProj1.dir/src/Proj1ActionInitialization.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exProj1.dir/src/Proj1ActionInitialization.cc.o -c /home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1/src/Proj1ActionInitialization.cc
 
 CMakeFiles/exProj1.dir/src/Proj1ActionInitialization.cc.i: cmake_force
@@ -181,7 +157,6 @@ CMakeFiles/exProj1.dir/src/Proj1ActionInitialization.cc.o.provides.build: CMakeF
 exProj1_OBJECTS = \
 "CMakeFiles/exProj1.dir/exProj1.cc.o" \
 "CMakeFiles/exProj1.dir/src/Proj1DetectorConstruction.cc.o" \
-"CMakeFiles/exProj1.dir/src/myPhysicsList.cc.o" \
 "CMakeFiles/exProj1.dir/src/Proj1PrimaryGeneratorAction.cc.o" \
 "CMakeFiles/exProj1.dir/src/Proj1ActionInitialization.cc.o"
 
@@ -190,7 +165,6 @@ exProj1_EXTERNAL_OBJECTS =
 
 exProj1: CMakeFiles/exProj1.dir/exProj1.cc.o
 exProj1: CMakeFiles/exProj1.dir/src/Proj1DetectorConstruction.cc.o
-exProj1: CMakeFiles/exProj1.dir/src/myPhysicsList.cc.o
 exProj1: CMakeFiles/exProj1.dir/src/Proj1PrimaryGeneratorAction.cc.o
 exProj1: CMakeFiles/exProj1.dir/src/Proj1ActionInitialization.cc.o
 exProj1: CMakeFiles/exProj1.dir/build.make
@@ -233,7 +207,7 @@ exProj1: /home/reza/geant4/geant4.10.02.p01-install/lib64/libG4intercoms.so
 exProj1: /home/reza/geant4/geant4.10.02.p01-install/lib64/libG4global.so
 exProj1: /home/reza/geant4/geant4.10.02.p01-install/lib64/libG4clhep.so
 exProj1: CMakeFiles/exProj1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable exProj1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable exProj1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/exProj1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -243,7 +217,6 @@ CMakeFiles/exProj1.dir/build: exProj1
 
 CMakeFiles/exProj1.dir/requires: CMakeFiles/exProj1.dir/exProj1.cc.o.requires
 CMakeFiles/exProj1.dir/requires: CMakeFiles/exProj1.dir/src/Proj1DetectorConstruction.cc.o.requires
-CMakeFiles/exProj1.dir/requires: CMakeFiles/exProj1.dir/src/myPhysicsList.cc.o.requires
 CMakeFiles/exProj1.dir/requires: CMakeFiles/exProj1.dir/src/Proj1PrimaryGeneratorAction.cc.o.requires
 CMakeFiles/exProj1.dir/requires: CMakeFiles/exProj1.dir/src/Proj1ActionInitialization.cc.o.requires
 

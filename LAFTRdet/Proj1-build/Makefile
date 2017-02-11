@@ -288,33 +288,6 @@ src/Proj1PrimaryGeneratorAction.cc.s:
 	$(MAKE) -f CMakeFiles/exProj1.dir/build.make CMakeFiles/exProj1.dir/src/Proj1PrimaryGeneratorAction.cc.s
 .PHONY : src/Proj1PrimaryGeneratorAction.cc.s
 
-src/myPhysicsList.o: src/myPhysicsList.cc.o
-
-.PHONY : src/myPhysicsList.o
-
-# target to build an object file
-src/myPhysicsList.cc.o:
-	$(MAKE) -f CMakeFiles/exProj1.dir/build.make CMakeFiles/exProj1.dir/src/myPhysicsList.cc.o
-.PHONY : src/myPhysicsList.cc.o
-
-src/myPhysicsList.i: src/myPhysicsList.cc.i
-
-.PHONY : src/myPhysicsList.i
-
-# target to preprocess a source file
-src/myPhysicsList.cc.i:
-	$(MAKE) -f CMakeFiles/exProj1.dir/build.make CMakeFiles/exProj1.dir/src/myPhysicsList.cc.i
-.PHONY : src/myPhysicsList.cc.i
-
-src/myPhysicsList.s: src/myPhysicsList.cc.s
-
-.PHONY : src/myPhysicsList.s
-
-# target to generate assembly for a file
-src/myPhysicsList.cc.s:
-	$(MAKE) -f CMakeFiles/exProj1.dir/build.make CMakeFiles/exProj1.dir/src/myPhysicsList.cc.s
-.PHONY : src/myPhysicsList.cc.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -341,9 +314,6 @@ help:
 	@echo "... src/Proj1PrimaryGeneratorAction.o"
 	@echo "... src/Proj1PrimaryGeneratorAction.i"
 	@echo "... src/Proj1PrimaryGeneratorAction.s"
-	@echo "... src/myPhysicsList.o"
-	@echo "... src/myPhysicsList.i"
-	@echo "... src/myPhysicsList.s"
 .PHONY : help
 
 

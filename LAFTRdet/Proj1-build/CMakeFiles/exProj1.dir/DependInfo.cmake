@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1/src/Proj1ActionInitialization.cc" "/home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1-build/CMakeFiles/exProj1.dir/src/Proj1ActionInitialization.cc.o"
   "/home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1/src/Proj1DetectorConstruction.cc" "/home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1-build/CMakeFiles/exProj1.dir/src/Proj1DetectorConstruction.cc.o"
   "/home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1/src/Proj1PrimaryGeneratorAction.cc" "/home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1-build/CMakeFiles/exProj1.dir/src/Proj1PrimaryGeneratorAction.cc.o"
-  "/home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1/src/myPhysicsList.cc" "/home/reza/Dropbox/LAFTR/geant4Projects/LAFTRdet/Proj1-build/CMakeFiles/exProj1.dir/src/myPhysicsList.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR
+# Install script for directory: /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMP
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exLAFTR"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR-build/exLAFTR")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/exLAFTR")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exLAFTR" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exLAFTR")
     file(RPATH_CHANGE
@@ -60,5 +60,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR-build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

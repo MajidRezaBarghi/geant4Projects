@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR
+CMAKE_SOURCE_DIR = /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR-build
+CMAKE_BINARY_DIR = /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build
 
 # Utility rule file for LAFTR.
 
@@ -71,6 +71,6 @@ CMakeFiles/LAFTR.dir/clean:
 .PHONY : CMakeFiles/LAFTR.dir/clean
 
 CMakeFiles/LAFTR.dir/depend:
-	cd /home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR /home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR /home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR-build /home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR-build /home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles/LAFTR.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles/LAFTR.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/LAFTR.dir/depend
 

@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/exLAFTR.dir/exLAFTR.cc.o"
   "CMakeFiles/exLAFTR.dir/src/LAFTRDetectorConstruction.cc.o"
+  "CMakeFiles/exLAFTR.dir/src/LAFTREventAction.cc.o"
   "CMakeFiles/exLAFTR.dir/src/LAFTRPrimaryGeneratorAction.cc.o"
+  "CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.o"
   "exLAFTR.pdb"
   "exLAFTR"
 )

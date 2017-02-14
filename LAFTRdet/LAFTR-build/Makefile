@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR
+CMAKE_SOURCE_DIR = /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR-build
+CMAKE_BINARY_DIR = /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,9 +124,9 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles /home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -234,6 +234,33 @@ src/LAFTRDetectorConstruction.cc.s:
 	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRDetectorConstruction.cc.s
 .PHONY : src/LAFTRDetectorConstruction.cc.s
 
+src/LAFTREventAction.o: src/LAFTREventAction.cc.o
+
+.PHONY : src/LAFTREventAction.o
+
+# target to build an object file
+src/LAFTREventAction.cc.o:
+	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTREventAction.cc.o
+.PHONY : src/LAFTREventAction.cc.o
+
+src/LAFTREventAction.i: src/LAFTREventAction.cc.i
+
+.PHONY : src/LAFTREventAction.i
+
+# target to preprocess a source file
+src/LAFTREventAction.cc.i:
+	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTREventAction.cc.i
+.PHONY : src/LAFTREventAction.cc.i
+
+src/LAFTREventAction.s: src/LAFTREventAction.cc.s
+
+.PHONY : src/LAFTREventAction.s
+
+# target to generate assembly for a file
+src/LAFTREventAction.cc.s:
+	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTREventAction.cc.s
+.PHONY : src/LAFTREventAction.cc.s
+
 src/LAFTRPrimaryGeneratorAction.o: src/LAFTRPrimaryGeneratorAction.cc.o
 
 .PHONY : src/LAFTRPrimaryGeneratorAction.o
@@ -261,6 +288,33 @@ src/LAFTRPrimaryGeneratorAction.cc.s:
 	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRPrimaryGeneratorAction.cc.s
 .PHONY : src/LAFTRPrimaryGeneratorAction.cc.s
 
+src/LAFTRRunAction.o: src/LAFTRRunAction.cc.o
+
+.PHONY : src/LAFTRRunAction.o
+
+# target to build an object file
+src/LAFTRRunAction.cc.o:
+	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.o
+.PHONY : src/LAFTRRunAction.cc.o
+
+src/LAFTRRunAction.i: src/LAFTRRunAction.cc.i
+
+.PHONY : src/LAFTRRunAction.i
+
+# target to preprocess a source file
+src/LAFTRRunAction.cc.i:
+	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.i
+.PHONY : src/LAFTRRunAction.cc.i
+
+src/LAFTRRunAction.s: src/LAFTRRunAction.cc.s
+
+.PHONY : src/LAFTRRunAction.s
+
+# target to generate assembly for a file
+src/LAFTRRunAction.cc.s:
+	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.s
+.PHONY : src/LAFTRRunAction.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -281,9 +335,15 @@ help:
 	@echo "... src/LAFTRDetectorConstruction.o"
 	@echo "... src/LAFTRDetectorConstruction.i"
 	@echo "... src/LAFTRDetectorConstruction.s"
+	@echo "... src/LAFTREventAction.o"
+	@echo "... src/LAFTREventAction.i"
+	@echo "... src/LAFTREventAction.s"
 	@echo "... src/LAFTRPrimaryGeneratorAction.o"
 	@echo "... src/LAFTRPrimaryGeneratorAction.i"
 	@echo "... src/LAFTRPrimaryGeneratorAction.s"
+	@echo "... src/LAFTRRunAction.o"
+	@echo "... src/LAFTRRunAction.i"
+	@echo "... src/LAFTRRunAction.s"
 .PHONY : help
 
 

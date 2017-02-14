@@ -1,6 +1,6 @@
-// #include "LAFTRDetectorConstruction.hh"
+#include "LAFTRDetectorConstruction.hh"
 // #include "LAFTRActionInitialization.hh"
-
+#include "LAFTRPrimaryGeneratorAction.hh"
 #ifdef G4MULTITHREADED
 #include "G4MTRunManager.hh"
 #else
@@ -40,13 +40,13 @@ int main(int argc,char** argv)
   // Set mandatory initialization classes
   //
   // Detector construction
-  // runManager->SetUserInitialization(new B1DetectorConstruction());
+  runManager->SetUserInitialization(new LAFTRDetectorConstruction());
 
   // Physics list
   G4VModularPhysicsList* physicsList = new QBBC;
   physicsList->SetVerboseLevel(1);
   runManager->SetUserInitialization(physicsList);
-
+  runManager->SetUserAction(new LAFTRPrimaryGeneratorAction());
   // User action initialization
   // runManager->SetUserInitialization(new B1ActionInitialization());
 

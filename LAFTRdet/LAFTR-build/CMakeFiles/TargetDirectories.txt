@@ -1,0 +1,8 @@
+/home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles/install.dir
+/home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles/list_install_components.dir
+/home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles/rebuild_cache.dir
+/home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles/edit_cache.dir
+/home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles/exLAFTR.dir
+/home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles/LAFTR.dir
+/home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles/install/strip.dir
+/home/rbarghi/Dropbox/LAFTR/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles/install/local.dir

@@ -65,6 +65,8 @@ G4UserSteppingAction.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/include/G4UserSteppingAction.hh
 globals.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/include/globals.hh
+fstream
+-
 
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRActionInitiliazation.cc
 LAFTRActionInitialization.hh
@@ -159,6 +161,10 @@ G4LogicalVolume.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/G4LogicalVolume.hh
 G4SystemOfUnits.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/G4SystemOfUnits.hh
+G4UnitsTable.hh
+-
+fstream
+-
 
 /home/rbarghi/geant4.10.3-install/include/Geant4/CLHEP/Geometry/BasicVector3D.h
 iosfwd

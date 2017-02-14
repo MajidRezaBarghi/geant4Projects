@@ -7,19 +7,23 @@
 #include "G4RunManager.hh"
 #include "G4LogicalVolume.hh"
 #include "G4SystemOfUnits.hh"
+#include <G4UnitsTable.hh>
+#include <fstream>
 
+using namespace std;
+ofstream myfile;
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 int counter = 0;
 LAFTRSteppingAction::LAFTRSteppingAction(LAFTREventAction* eventAction)
 : G4UserSteppingAction(),
   fEventAction(eventAction),
   fScoringVolume(0)
-{}
+{myfile.open("test.txt");myfile<<"x\n";}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 LAFTRSteppingAction::~LAFTRSteppingAction()
-{}
+{G4cout<< counter<<G4endl;myfile.close();}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -44,7 +48,9 @@ void LAFTRSteppingAction::UserSteppingAction(const G4Step* step)
   G4double edepStep = step->GetTotalEnergyDeposit();
   ++counter;
   if (edepStep !=0){
-  G4cout<< edepStep<<" This is step: "<<counter<< G4endl;
+  G4cout<<G4BestUnit(edepStep, "Energy")<<" This is step: "<<counter<< G4BestUnit(edepStep, "Energy")<<G4endl;
+
+  myfile<< edepStep << "\n";
   };
   // fEventAction->AddEdep(edepStep);
 }

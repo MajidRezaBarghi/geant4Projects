@@ -3,6 +3,7 @@
 
 #include "G4UserSteppingAction.hh"
 #include "globals.hh"
+#include <fstream>
 
 class LAFTREventAction;
 

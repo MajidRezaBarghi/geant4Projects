@@ -153,6 +153,8 @@ G4Step.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/G4Step.hh
 G4Event.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/G4Event.hh
+G4RunManager.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/G4RunManager.hh
 G4LogicalVolume.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/G4LogicalVolume.hh
 G4SystemOfUnits.hh

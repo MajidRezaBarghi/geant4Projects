@@ -4,7 +4,7 @@
 
 #include "G4Step.hh"
 #include "G4Event.hh"
-// #include "G4RunManager.hh"
+#include "G4RunManager.hh"
 #include "G4LogicalVolume.hh"
 #include "G4SystemOfUnits.hh"
 
@@ -25,12 +25,12 @@ LAFTRSteppingAction::~LAFTRSteppingAction()
 
 void LAFTRSteppingAction::UserSteppingAction(const G4Step* step)
 {
-  // if (!fScoringVolume) {
-  //   const B1DetectorConstruction* detectorConstruction
-  //     = static_cast<const B1DetectorConstruction*>
-  //       (G4RunManager::GetRunManager()->GetUserDetectorConstruction());
-  //   fScoringVolume = detectorConstruction->GetScoringVolume();
-  // }
+  if (!fScoringVolume) {
+    const LAFTRDetectorConstruction* detectorConstruction
+      = static_cast<const LAFTRDetectorConstruction*>
+        (G4RunManager::GetRunManager()->GetUserDetectorConstruction());
+    fScoringVolume = detectorConstruction->GetScoringVolume();
+  }
 
   // get volume of the current step
   G4LogicalVolume* volume
@@ -38,7 +38,7 @@ void LAFTRSteppingAction::UserSteppingAction(const G4Step* step)
       ->GetVolume()->GetLogicalVolume();
 
   // check if we are in scoring volume
-  // if (volume != fScoringVolume) return;
+  if (volume != fScoringVolume) return;
 
   // collect energy deposited in this step
   G4double edepStep = step->GetTotalEnergyDeposit();

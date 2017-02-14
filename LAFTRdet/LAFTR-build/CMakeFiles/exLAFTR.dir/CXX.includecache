@@ -9,6 +9,8 @@
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/exLAFTR.cc
 LAFTRDetectorConstruction.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/LAFTRDetectorConstruction.hh
+LAFTRActionInitialization.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/LAFTRActionInitialization.hh
 LAFTRPrimaryGeneratorAction.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/LAFTRPrimaryGeneratorAction.hh
 G4MTRunManager.hh
@@ -25,6 +27,10 @@ G4UIExecutive.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/G4UIExecutive.hh
 Randomize.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/Randomize.hh
+
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/include/LAFTRActionInitialization.hh
+G4VUserActionInitialization.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/include/G4VUserActionInitialization.hh
 
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/include/LAFTRDetectorConstruction.hh
 G4VUserDetectorConstruction.hh
@@ -53,6 +59,24 @@ G4Accumulable.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/include/G4Accumulable.hh
 globals.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/include/globals.hh
+
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/include/LAFTRSteppingAction.hh
+G4UserSteppingAction.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/include/G4UserSteppingAction.hh
+globals.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/include/globals.hh
+
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRActionInitiliazation.cc
+LAFTRActionInitialization.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRActionInitialization.hh
+LAFTRPrimaryGeneratorAction.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRPrimaryGeneratorAction.hh
+LAFTRRunAction.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRRunAction.hh
+LAFTREventAction.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTREventAction.hh
+LAFTRSteppingAction.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRSteppingAction.hh
 
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRDetectorConstruction.cc
 LAFTRDetectorConstruction.hh
@@ -115,6 +139,22 @@ G4LogicalVolume.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/G4LogicalVolume.hh
 G4UnitsTable.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/G4UnitsTable.hh
+G4SystemOfUnits.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/G4SystemOfUnits.hh
+
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRSteppingAction.cc
+LAFTRSteppingAction.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRSteppingAction.hh
+LAFTREventAction.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTREventAction.hh
+LAFTRDetectorConstruction.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRDetectorConstruction.hh
+G4Step.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/G4Step.hh
+G4Event.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/G4Event.hh
+G4LogicalVolume.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/G4LogicalVolume.hh
 G4SystemOfUnits.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/G4SystemOfUnits.hh
 
@@ -2771,6 +2811,8 @@ rundefs.hh
 /home/rbarghi/geant4.10.3-install/include/Geant4/rundefs.hh
 G4AutoLock.hh
 /home/rbarghi/geant4.10.3-install/include/Geant4/G4AutoLock.hh
+
+/home/rbarghi/geant4.10.3-install/include/Geant4/G4VUserActionInitialization.hh
 
 /home/rbarghi/geant4.10.3-install/include/Geant4/G4VUserDetectorConstruction.hh
 vector

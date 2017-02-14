@@ -81,9 +81,33 @@ CMakeFiles/exLAFTR.dir/exLAFTR.cc.o.provides: CMakeFiles/exLAFTR.dir/exLAFTR.cc.
 CMakeFiles/exLAFTR.dir/exLAFTR.cc.o.provides.build: CMakeFiles/exLAFTR.dir/exLAFTR.cc.o
 
 
+CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.o: CMakeFiles/exLAFTR.dir/flags.make
+CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.o: /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRActionInitiliazation.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.o -c /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRActionInitiliazation.cc
+
+CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRActionInitiliazation.cc > CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.i
+
+CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRActionInitiliazation.cc -o CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.s
+
+CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.o.requires:
+
+.PHONY : CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.o.requires
+
+CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.o.provides: CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.o.requires
+	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.o.provides.build
+.PHONY : CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.o.provides
+
+CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.o.provides.build: CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.o
+
+
 CMakeFiles/exLAFTR.dir/src/LAFTRDetectorConstruction.cc.o: CMakeFiles/exLAFTR.dir/flags.make
 CMakeFiles/exLAFTR.dir/src/LAFTRDetectorConstruction.cc.o: /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRDetectorConstruction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/exLAFTR.dir/src/LAFTRDetectorConstruction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exLAFTR.dir/src/LAFTRDetectorConstruction.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exLAFTR.dir/src/LAFTRDetectorConstruction.cc.o -c /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRDetectorConstruction.cc
 
 CMakeFiles/exLAFTR.dir/src/LAFTRDetectorConstruction.cc.i: cmake_force
@@ -107,7 +131,7 @@ CMakeFiles/exLAFTR.dir/src/LAFTRDetectorConstruction.cc.o.provides.build: CMakeF
 
 CMakeFiles/exLAFTR.dir/src/LAFTREventAction.cc.o: CMakeFiles/exLAFTR.dir/flags.make
 CMakeFiles/exLAFTR.dir/src/LAFTREventAction.cc.o: /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTREventAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exLAFTR.dir/src/LAFTREventAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/exLAFTR.dir/src/LAFTREventAction.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exLAFTR.dir/src/LAFTREventAction.cc.o -c /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTREventAction.cc
 
 CMakeFiles/exLAFTR.dir/src/LAFTREventAction.cc.i: cmake_force
@@ -131,7 +155,7 @@ CMakeFiles/exLAFTR.dir/src/LAFTREventAction.cc.o.provides.build: CMakeFiles/exLA
 
 CMakeFiles/exLAFTR.dir/src/LAFTRPrimaryGeneratorAction.cc.o: CMakeFiles/exLAFTR.dir/flags.make
 CMakeFiles/exLAFTR.dir/src/LAFTRPrimaryGeneratorAction.cc.o: /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRPrimaryGeneratorAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/exLAFTR.dir/src/LAFTRPrimaryGeneratorAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/exLAFTR.dir/src/LAFTRPrimaryGeneratorAction.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exLAFTR.dir/src/LAFTRPrimaryGeneratorAction.cc.o -c /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRPrimaryGeneratorAction.cc
 
 CMakeFiles/exLAFTR.dir/src/LAFTRPrimaryGeneratorAction.cc.i: cmake_force
@@ -155,7 +179,7 @@ CMakeFiles/exLAFTR.dir/src/LAFTRPrimaryGeneratorAction.cc.o.provides.build: CMak
 
 CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.o: CMakeFiles/exLAFTR.dir/flags.make
 CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.o: /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRRunAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.o -c /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRRunAction.cc
 
 CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.i: cmake_force
@@ -177,22 +201,50 @@ CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.o.provides: CMakeFiles/exLAFTR.dir/
 CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.o.provides.build: CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.o
 
 
+CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.o: CMakeFiles/exLAFTR.dir/flags.make
+CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.o: /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRSteppingAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.o -c /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRSteppingAction.cc
+
+CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRSteppingAction.cc > CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.i
+
+CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRSteppingAction.cc -o CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.s
+
+CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.o.requires:
+
+.PHONY : CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.o.requires
+
+CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.o.provides: CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.o.requires
+	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.o.provides.build
+.PHONY : CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.o.provides
+
+CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.o.provides.build: CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.o
+
+
 # Object files for target exLAFTR
 exLAFTR_OBJECTS = \
 "CMakeFiles/exLAFTR.dir/exLAFTR.cc.o" \
+"CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.o" \
 "CMakeFiles/exLAFTR.dir/src/LAFTRDetectorConstruction.cc.o" \
 "CMakeFiles/exLAFTR.dir/src/LAFTREventAction.cc.o" \
 "CMakeFiles/exLAFTR.dir/src/LAFTRPrimaryGeneratorAction.cc.o" \
-"CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.o"
+"CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.o" \
+"CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.o"
 
 # External object files for target exLAFTR
 exLAFTR_EXTERNAL_OBJECTS =
 
 exLAFTR: CMakeFiles/exLAFTR.dir/exLAFTR.cc.o
+exLAFTR: CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.o
 exLAFTR: CMakeFiles/exLAFTR.dir/src/LAFTRDetectorConstruction.cc.o
 exLAFTR: CMakeFiles/exLAFTR.dir/src/LAFTREventAction.cc.o
 exLAFTR: CMakeFiles/exLAFTR.dir/src/LAFTRPrimaryGeneratorAction.cc.o
 exLAFTR: CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.o
+exLAFTR: CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.o
 exLAFTR: CMakeFiles/exLAFTR.dir/build.make
 exLAFTR: /home/rbarghi/geant4.10.3-install/lib64/libG4Tree.so
 exLAFTR: /home/rbarghi/geant4.10.3-install/lib64/libG4GMocren.so
@@ -233,7 +285,7 @@ exLAFTR: /home/rbarghi/geant4.10.3-install/lib64/libG4intercoms.so
 exLAFTR: /home/rbarghi/geant4.10.3-install/lib64/libG4global.so
 exLAFTR: /home/rbarghi/geant4.10.3-install/lib64/libG4clhep.so
 exLAFTR: CMakeFiles/exLAFTR.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable exLAFTR"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable exLAFTR"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/exLAFTR.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -242,10 +294,12 @@ CMakeFiles/exLAFTR.dir/build: exLAFTR
 .PHONY : CMakeFiles/exLAFTR.dir/build
 
 CMakeFiles/exLAFTR.dir/requires: CMakeFiles/exLAFTR.dir/exLAFTR.cc.o.requires
+CMakeFiles/exLAFTR.dir/requires: CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.o.requires
 CMakeFiles/exLAFTR.dir/requires: CMakeFiles/exLAFTR.dir/src/LAFTRDetectorConstruction.cc.o.requires
 CMakeFiles/exLAFTR.dir/requires: CMakeFiles/exLAFTR.dir/src/LAFTREventAction.cc.o.requires
 CMakeFiles/exLAFTR.dir/requires: CMakeFiles/exLAFTR.dir/src/LAFTRPrimaryGeneratorAction.cc.o.requires
 CMakeFiles/exLAFTR.dir/requires: CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.o.requires
+CMakeFiles/exLAFTR.dir/requires: CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.o.requires
 
 .PHONY : CMakeFiles/exLAFTR.dir/requires
 

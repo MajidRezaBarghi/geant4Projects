@@ -207,6 +207,33 @@ exLAFTR.cc.s:
 	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/exLAFTR.cc.s
 .PHONY : exLAFTR.cc.s
 
+src/LAFTRActionInitiliazation.o: src/LAFTRActionInitiliazation.cc.o
+
+.PHONY : src/LAFTRActionInitiliazation.o
+
+# target to build an object file
+src/LAFTRActionInitiliazation.cc.o:
+	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.o
+.PHONY : src/LAFTRActionInitiliazation.cc.o
+
+src/LAFTRActionInitiliazation.i: src/LAFTRActionInitiliazation.cc.i
+
+.PHONY : src/LAFTRActionInitiliazation.i
+
+# target to preprocess a source file
+src/LAFTRActionInitiliazation.cc.i:
+	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.i
+.PHONY : src/LAFTRActionInitiliazation.cc.i
+
+src/LAFTRActionInitiliazation.s: src/LAFTRActionInitiliazation.cc.s
+
+.PHONY : src/LAFTRActionInitiliazation.s
+
+# target to generate assembly for a file
+src/LAFTRActionInitiliazation.cc.s:
+	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.s
+.PHONY : src/LAFTRActionInitiliazation.cc.s
+
 src/LAFTRDetectorConstruction.o: src/LAFTRDetectorConstruction.cc.o
 
 .PHONY : src/LAFTRDetectorConstruction.o
@@ -315,6 +342,33 @@ src/LAFTRRunAction.cc.s:
 	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.s
 .PHONY : src/LAFTRRunAction.cc.s
 
+src/LAFTRSteppingAction.o: src/LAFTRSteppingAction.cc.o
+
+.PHONY : src/LAFTRSteppingAction.o
+
+# target to build an object file
+src/LAFTRSteppingAction.cc.o:
+	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.o
+.PHONY : src/LAFTRSteppingAction.cc.o
+
+src/LAFTRSteppingAction.i: src/LAFTRSteppingAction.cc.i
+
+.PHONY : src/LAFTRSteppingAction.i
+
+# target to preprocess a source file
+src/LAFTRSteppingAction.cc.i:
+	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.i
+.PHONY : src/LAFTRSteppingAction.cc.i
+
+src/LAFTRSteppingAction.s: src/LAFTRSteppingAction.cc.s
+
+.PHONY : src/LAFTRSteppingAction.s
+
+# target to generate assembly for a file
+src/LAFTRSteppingAction.cc.s:
+	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.s
+.PHONY : src/LAFTRSteppingAction.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -332,6 +386,9 @@ help:
 	@echo "... exLAFTR.o"
 	@echo "... exLAFTR.i"
 	@echo "... exLAFTR.s"
+	@echo "... src/LAFTRActionInitiliazation.o"
+	@echo "... src/LAFTRActionInitiliazation.i"
+	@echo "... src/LAFTRActionInitiliazation.s"
 	@echo "... src/LAFTRDetectorConstruction.o"
 	@echo "... src/LAFTRDetectorConstruction.i"
 	@echo "... src/LAFTRDetectorConstruction.s"
@@ -344,6 +401,9 @@ help:
 	@echo "... src/LAFTRRunAction.o"
 	@echo "... src/LAFTRRunAction.i"
 	@echo "... src/LAFTRRunAction.s"
+	@echo "... src/LAFTRSteppingAction.o"
+	@echo "... src/LAFTRSteppingAction.i"
+	@echo "... src/LAFTRSteppingAction.s"
 .PHONY : help
 
 

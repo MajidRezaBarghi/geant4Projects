@@ -1,5 +1,5 @@
 #include "LAFTRDetectorConstruction.hh"
-// #include "LAFTRActionInitialization.hh"
+#include "LAFTRActionInitialization.hh"
 #include "LAFTRPrimaryGeneratorAction.hh"
 #ifdef G4MULTITHREADED
 #include "G4MTRunManager.hh"
@@ -46,9 +46,9 @@ int main(int argc,char** argv)
   G4VModularPhysicsList* physicsList = new QBBC;
   physicsList->SetVerboseLevel(1);
   runManager->SetUserInitialization(physicsList);
-  runManager->SetUserAction(new LAFTRPrimaryGeneratorAction());
+//  runManager->SetUserAction(new LAFTRPrimaryGeneratorAction());
   // User action initialization
-  // runManager->SetUserInitialization(new B1ActionInitialization());
+  runManager->SetUserInitialization(new LAFTRActionInitialization());
 
   // Initialize visualization
   //

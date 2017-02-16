@@ -65,5 +65,5 @@
 /event/verbose 0
 /vis/viewer/zoom .25
 /vis/viewer/refresh
-/run/beamOn 15000
+/run/beamOn 30000
 /vis/scene/notifyHandlers scene-0

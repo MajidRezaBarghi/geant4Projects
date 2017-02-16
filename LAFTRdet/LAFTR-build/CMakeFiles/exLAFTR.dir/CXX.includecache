@@ -113,6 +113,10 @@ G4Event.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/G4Event.hh
 G4RunManager.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/G4RunManager.hh
+fstream
+-
+G4SystemOfUnits.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/G4SystemOfUnits.hh
 
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRPrimaryGeneratorAction.cc
 LAFTRPrimaryGeneratorAction.hh

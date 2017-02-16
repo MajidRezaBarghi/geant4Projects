@@ -1,0 +1,16 @@
+Simple Geant4 simmulation for a 6 Mev plane wave of gamma rays
+directed at a 50mm by 30cm of plastic polyvinly_tulene scintillator place
+in air.
+
+The the simulation runs records the energy deposited by every individual 
+gamma ray into a txt file called events.txt located in the build file. A histogram is generated in the via python using the matplotlib.pyplots library. 
+
+To run the simulation must be compiled with cmake 
+===========================================
+Following good cmake practive
+the build for the project must be built in a serprate build directory 
+
+mkdir LAFTR-build
+cd LAFTR-build
+
+cmake -DCMAKE_PREFIX_PATH=/path/to/geant4install /path/to/LAFTR

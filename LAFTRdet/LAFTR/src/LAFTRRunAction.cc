@@ -31,27 +31,6 @@ void LAFTRRunAction::BeginOfRunAction(const G4Run*)
 
 void LAFTRRunAction::EndOfRunAction(const G4Run* run)
 {
-  // if (IsMaster()) {
-  //   G4cout
-  //    << G4endl
-  //    << "--------------------End of Global Run-----------------------";
-  // }
-  // else {
-  //   G4cout
-  //    << G4endl
-  //    << "--------------------End of Local Run------------------------";
-  // }
-  //
-  // G4cout
-  //    << G4endl
-  //    << " The run consists of " << nofEvents << " "<< runCondition
-  //    << G4endl
-  //    << " Cumulated dose per run, in scoring volume : "
-  //    << G4BestUnit(dose,"Dose") << " rms = " << G4BestUnit(rmsDose,"Dose")
-  //    << G4endl
-  //    << "------------------------------------------------------------"
-  //    << G4endl
-  //    << G4endl;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

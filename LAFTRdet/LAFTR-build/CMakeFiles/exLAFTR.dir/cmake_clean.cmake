@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/exLAFTR.dir/src/LAFTRPrimaryGeneratorAction.cc.o"
   "CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.o"
   "CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.o"
+  "CMakeFiles/exLAFTR.dir/src/LAFTRTrackingAction.cc.o"
   "exLAFTR.pdb"
   "exLAFTR"
 )

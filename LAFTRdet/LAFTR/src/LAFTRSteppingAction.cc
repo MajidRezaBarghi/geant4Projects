@@ -48,9 +48,10 @@ void LAFTRSteppingAction::UserSteppingAction(const G4Step* step)
   G4double edepStep = step->GetTotalEnergyDeposit();
   ++counter;
   if (edepStep !=0){
-  G4cout<<G4BestUnit(edepStep, "Energy")<<" This is step: "<<counter<< G4BestUnit(edepStep, "Energy")<<G4endl;
-
-  myfile<< edepStep << "\n";
+  //This print out was for debugging purposes only
+  // G4cout<<G4BestUnit(edepStep, "Energy")<<" This is step: "<<counter<< G4BestUnit(edepStep, "Energy")<<G4endl;
+  //
+  // myfile<< edepStep << "\n";
   fEventAction->AddEdep(edepStep);
   };
 }

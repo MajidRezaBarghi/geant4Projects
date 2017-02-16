@@ -2,6 +2,7 @@
 #include "LAFTRPrimaryGeneratorAction.hh"
 #include "LAFTRRunAction.hh"
 #include "LAFTREventAction.hh"
+#include "LAFTRTrackingAction.hh"
 #include "LAFTRSteppingAction.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -34,6 +35,8 @@ void LAFTRActionInitialization::Build() const
 
   LAFTREventAction* eventAction = new LAFTREventAction(runAction);
   SetUserAction(eventAction);
+
+  SetUserAction(new LAFTRTrackingAction);
 
   SetUserAction(new LAFTRSteppingAction(eventAction));
 }

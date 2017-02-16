@@ -369,6 +369,33 @@ src/LAFTRSteppingAction.cc.s:
 	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.s
 .PHONY : src/LAFTRSteppingAction.cc.s
 
+src/LAFTRTrackingAction.o: src/LAFTRTrackingAction.cc.o
+
+.PHONY : src/LAFTRTrackingAction.o
+
+# target to build an object file
+src/LAFTRTrackingAction.cc.o:
+	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRTrackingAction.cc.o
+.PHONY : src/LAFTRTrackingAction.cc.o
+
+src/LAFTRTrackingAction.i: src/LAFTRTrackingAction.cc.i
+
+.PHONY : src/LAFTRTrackingAction.i
+
+# target to preprocess a source file
+src/LAFTRTrackingAction.cc.i:
+	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRTrackingAction.cc.i
+.PHONY : src/LAFTRTrackingAction.cc.i
+
+src/LAFTRTrackingAction.s: src/LAFTRTrackingAction.cc.s
+
+.PHONY : src/LAFTRTrackingAction.s
+
+# target to generate assembly for a file
+src/LAFTRTrackingAction.cc.s:
+	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRTrackingAction.cc.s
+.PHONY : src/LAFTRTrackingAction.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -404,6 +431,9 @@ help:
 	@echo "... src/LAFTRSteppingAction.o"
 	@echo "... src/LAFTRSteppingAction.i"
 	@echo "... src/LAFTRSteppingAction.s"
+	@echo "... src/LAFTRTrackingAction.o"
+	@echo "... src/LAFTRTrackingAction.i"
+	@echo "... src/LAFTRTrackingAction.s"
 .PHONY : help
 
 

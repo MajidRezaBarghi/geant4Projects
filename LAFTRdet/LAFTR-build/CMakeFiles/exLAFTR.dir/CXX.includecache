@@ -68,6 +68,16 @@ globals.hh
 fstream
 -
 
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/include/LAFTRTrackingAction.hh
+G4UserTrackingAction.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/include/G4UserTrackingAction.hh
+G4ParticleDefinition.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/include/G4ParticleDefinition.hh
+G4ThreeVector.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/include/G4ThreeVector.hh
+globals.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/include/globals.hh
+
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRActionInitiliazation.cc
 LAFTRActionInitialization.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRActionInitialization.hh
@@ -77,6 +87,8 @@ LAFTRRunAction.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRRunAction.hh
 LAFTREventAction.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTREventAction.hh
+LAFTRTrackingAction.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRTrackingAction.hh
 LAFTRSteppingAction.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRSteppingAction.hh
 
@@ -169,6 +181,16 @@ G4UnitsTable.hh
 -
 fstream
 -
+
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRTrackingAction.cc
+LAFTRTrackingAction.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRTrackingAction.hh
+G4TrackingManager.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/G4TrackingManager.hh
+G4Track.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/G4Track.hh
+G4SystemOfUnits.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/G4SystemOfUnits.hh
 
 /home/rbarghi/geant4.10.3-install/include/Geant4/CLHEP/Geometry/BasicVector3D.h
 iosfwd

@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRPrimaryGeneratorAction.cc" "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles/exLAFTR.dir/src/LAFTRPrimaryGeneratorAction.cc.o"
   "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRRunAction.cc" "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.o"
   "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRSteppingAction.cc" "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.o"
+  "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/src/LAFTRTrackingAction.cc" "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles/exLAFTR.dir/src/LAFTRTrackingAction.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

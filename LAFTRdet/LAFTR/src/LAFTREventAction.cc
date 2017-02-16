@@ -28,7 +28,7 @@ void LAFTREventAction::BeginOfEventAction(const G4Event*)
 void LAFTREventAction::EndOfEventAction(const G4Event* event)
 {
   //G4cout<< tedep << G4endl;
-  if (fEdep != 0){ 
+  if (fEdep != 0){
   myfile1<< fEdep << "\n";
   fEdep = 0;
 };

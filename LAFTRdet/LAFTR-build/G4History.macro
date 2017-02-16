@@ -31,6 +31,8 @@
 /vis/scene/notifyHandlers
 /vis/set/textLayout
 /vis/set/textColour
+/vis/scene/add/axes
+/vis/scene/notifyHandlers
 /vis/set/colour red
 /vis/set/lineWidth 2
 /vis/scene/add/frame
@@ -65,5 +67,3 @@
 /event/verbose 0
 /vis/viewer/zoom .25
 /vis/viewer/refresh
-/run/beamOn 30000
-/vis/scene/notifyHandlers scene-0

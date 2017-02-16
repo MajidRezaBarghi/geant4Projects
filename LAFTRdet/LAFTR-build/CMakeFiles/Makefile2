@@ -60,71 +60,300 @@ CMAKE_SOURCE_DIR = /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR
 CMAKE_BINARY_DIR = /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build
 
 #=============================================================================
-# Target rules for target CMakeFiles/exLAFTR.dir
+# Target rules for target CMakeFiles/B2.dir
 
 # All Build rule for target.
-CMakeFiles/exLAFTR.dir/all:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/depend
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target exLAFTR"
-.PHONY : CMakeFiles/exLAFTR.dir/all
-
-# Include target in all.
-all: CMakeFiles/exLAFTR.dir/all
-
-.PHONY : all
+CMakeFiles/B2.dir/all: LAFTRa/CMakeFiles/exLAFTRa.dir/all
+CMakeFiles/B2.dir/all: LAFTRb/CMakeFiles/exLAFTRb.dir/all
+CMakeFiles/B2.dir/all: LAFTRc/CMakeFiles/exLAFTRc.dir/all
+	$(MAKE) -f CMakeFiles/B2.dir/build.make CMakeFiles/B2.dir/depend
+	$(MAKE) -f CMakeFiles/B2.dir/build.make CMakeFiles/B2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles --progress-num= "Built target B2"
+.PHONY : CMakeFiles/B2.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/exLAFTR.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles 9
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exLAFTR.dir/all
+CMakeFiles/B2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles 27
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/B2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles 0
-.PHONY : CMakeFiles/exLAFTR.dir/rule
+.PHONY : CMakeFiles/B2.dir/rule
 
 # Convenience name for target.
-exLAFTR: CMakeFiles/exLAFTR.dir/rule
+B2: CMakeFiles/B2.dir/rule
 
-.PHONY : exLAFTR
-
-# clean rule for target.
-CMakeFiles/exLAFTR.dir/clean:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/clean
-.PHONY : CMakeFiles/exLAFTR.dir/clean
+.PHONY : B2
 
 # clean rule for target.
-clean: CMakeFiles/exLAFTR.dir/clean
+CMakeFiles/B2.dir/clean:
+	$(MAKE) -f CMakeFiles/B2.dir/build.make CMakeFiles/B2.dir/clean
+.PHONY : CMakeFiles/B2.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/B2.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/LAFTR.dir
+# Directory level rules for directory LAFTRa
+
+# Convenience name for "all" pass in the directory.
+LAFTRa/all: LAFTRa/CMakeFiles/exLAFTRa.dir/all
+
+.PHONY : LAFTRa/all
+
+# Convenience name for "clean" pass in the directory.
+LAFTRa/clean: LAFTRa/CMakeFiles/exLAFTRa.dir/clean
+LAFTRa/clean: LAFTRa/CMakeFiles/LAFTRa.dir/clean
+
+.PHONY : LAFTRa/clean
+
+# Convenience name for "preinstall" pass in the directory.
+LAFTRa/preinstall:
+
+.PHONY : LAFTRa/preinstall
+
+#=============================================================================
+# Target rules for target LAFTRa/CMakeFiles/exLAFTRa.dir
 
 # All Build rule for target.
-CMakeFiles/LAFTR.dir/all: CMakeFiles/exLAFTR.dir/all
-	$(MAKE) -f CMakeFiles/LAFTR.dir/build.make CMakeFiles/LAFTR.dir/depend
-	$(MAKE) -f CMakeFiles/LAFTR.dir/build.make CMakeFiles/LAFTR.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles --progress-num= "Built target LAFTR"
-.PHONY : CMakeFiles/LAFTR.dir/all
+LAFTRa/CMakeFiles/exLAFTRa.dir/all:
+	$(MAKE) -f LAFTRa/CMakeFiles/exLAFTRa.dir/build.make LAFTRa/CMakeFiles/exLAFTRa.dir/depend
+	$(MAKE) -f LAFTRa/CMakeFiles/exLAFTRa.dir/build.make LAFTRa/CMakeFiles/exLAFTRa.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target exLAFTRa"
+.PHONY : LAFTRa/CMakeFiles/exLAFTRa.dir/all
+
+# Include target in all.
+all: LAFTRa/CMakeFiles/exLAFTRa.dir/all
+
+.PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/LAFTR.dir/rule: cmake_check_build_system
+LAFTRa/CMakeFiles/exLAFTRa.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles 9
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/LAFTR.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 LAFTRa/CMakeFiles/exLAFTRa.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles 0
-.PHONY : CMakeFiles/LAFTR.dir/rule
+.PHONY : LAFTRa/CMakeFiles/exLAFTRa.dir/rule
 
 # Convenience name for target.
-LAFTR: CMakeFiles/LAFTR.dir/rule
+exLAFTRa: LAFTRa/CMakeFiles/exLAFTRa.dir/rule
 
-.PHONY : LAFTR
-
-# clean rule for target.
-CMakeFiles/LAFTR.dir/clean:
-	$(MAKE) -f CMakeFiles/LAFTR.dir/build.make CMakeFiles/LAFTR.dir/clean
-.PHONY : CMakeFiles/LAFTR.dir/clean
+.PHONY : exLAFTRa
 
 # clean rule for target.
-clean: CMakeFiles/LAFTR.dir/clean
+LAFTRa/CMakeFiles/exLAFTRa.dir/clean:
+	$(MAKE) -f LAFTRa/CMakeFiles/exLAFTRa.dir/build.make LAFTRa/CMakeFiles/exLAFTRa.dir/clean
+.PHONY : LAFTRa/CMakeFiles/exLAFTRa.dir/clean
+
+# clean rule for target.
+clean: LAFTRa/CMakeFiles/exLAFTRa.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target LAFTRa/CMakeFiles/LAFTRa.dir
+
+# All Build rule for target.
+LAFTRa/CMakeFiles/LAFTRa.dir/all: LAFTRa/CMakeFiles/exLAFTRa.dir/all
+	$(MAKE) -f LAFTRa/CMakeFiles/LAFTRa.dir/build.make LAFTRa/CMakeFiles/LAFTRa.dir/depend
+	$(MAKE) -f LAFTRa/CMakeFiles/LAFTRa.dir/build.make LAFTRa/CMakeFiles/LAFTRa.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles --progress-num= "Built target LAFTRa"
+.PHONY : LAFTRa/CMakeFiles/LAFTRa.dir/all
+
+# Build rule for subdir invocation for target.
+LAFTRa/CMakeFiles/LAFTRa.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 LAFTRa/CMakeFiles/LAFTRa.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles 0
+.PHONY : LAFTRa/CMakeFiles/LAFTRa.dir/rule
+
+# Convenience name for target.
+LAFTRa: LAFTRa/CMakeFiles/LAFTRa.dir/rule
+
+.PHONY : LAFTRa
+
+# clean rule for target.
+LAFTRa/CMakeFiles/LAFTRa.dir/clean:
+	$(MAKE) -f LAFTRa/CMakeFiles/LAFTRa.dir/build.make LAFTRa/CMakeFiles/LAFTRa.dir/clean
+.PHONY : LAFTRa/CMakeFiles/LAFTRa.dir/clean
+
+# clean rule for target.
+clean: LAFTRa/CMakeFiles/LAFTRa.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory LAFTRb
+
+# Convenience name for "all" pass in the directory.
+LAFTRb/all: LAFTRb/CMakeFiles/exLAFTRb.dir/all
+
+.PHONY : LAFTRb/all
+
+# Convenience name for "clean" pass in the directory.
+LAFTRb/clean: LAFTRb/CMakeFiles/exLAFTRb.dir/clean
+LAFTRb/clean: LAFTRb/CMakeFiles/LAFTRb.dir/clean
+
+.PHONY : LAFTRb/clean
+
+# Convenience name for "preinstall" pass in the directory.
+LAFTRb/preinstall:
+
+.PHONY : LAFTRb/preinstall
+
+#=============================================================================
+# Target rules for target LAFTRb/CMakeFiles/exLAFTRb.dir
+
+# All Build rule for target.
+LAFTRb/CMakeFiles/exLAFTRb.dir/all:
+	$(MAKE) -f LAFTRb/CMakeFiles/exLAFTRb.dir/build.make LAFTRb/CMakeFiles/exLAFTRb.dir/depend
+	$(MAKE) -f LAFTRb/CMakeFiles/exLAFTRb.dir/build.make LAFTRb/CMakeFiles/exLAFTRb.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles --progress-num=10,11,12,13,14,15,16,17,18 "Built target exLAFTRb"
+.PHONY : LAFTRb/CMakeFiles/exLAFTRb.dir/all
+
+# Include target in all.
+all: LAFTRb/CMakeFiles/exLAFTRb.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+LAFTRb/CMakeFiles/exLAFTRb.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 LAFTRb/CMakeFiles/exLAFTRb.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles 0
+.PHONY : LAFTRb/CMakeFiles/exLAFTRb.dir/rule
+
+# Convenience name for target.
+exLAFTRb: LAFTRb/CMakeFiles/exLAFTRb.dir/rule
+
+.PHONY : exLAFTRb
+
+# clean rule for target.
+LAFTRb/CMakeFiles/exLAFTRb.dir/clean:
+	$(MAKE) -f LAFTRb/CMakeFiles/exLAFTRb.dir/build.make LAFTRb/CMakeFiles/exLAFTRb.dir/clean
+.PHONY : LAFTRb/CMakeFiles/exLAFTRb.dir/clean
+
+# clean rule for target.
+clean: LAFTRb/CMakeFiles/exLAFTRb.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target LAFTRb/CMakeFiles/LAFTRb.dir
+
+# All Build rule for target.
+LAFTRb/CMakeFiles/LAFTRb.dir/all: LAFTRb/CMakeFiles/exLAFTRb.dir/all
+	$(MAKE) -f LAFTRb/CMakeFiles/LAFTRb.dir/build.make LAFTRb/CMakeFiles/LAFTRb.dir/depend
+	$(MAKE) -f LAFTRb/CMakeFiles/LAFTRb.dir/build.make LAFTRb/CMakeFiles/LAFTRb.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles --progress-num= "Built target LAFTRb"
+.PHONY : LAFTRb/CMakeFiles/LAFTRb.dir/all
+
+# Build rule for subdir invocation for target.
+LAFTRb/CMakeFiles/LAFTRb.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 LAFTRb/CMakeFiles/LAFTRb.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles 0
+.PHONY : LAFTRb/CMakeFiles/LAFTRb.dir/rule
+
+# Convenience name for target.
+LAFTRb: LAFTRb/CMakeFiles/LAFTRb.dir/rule
+
+.PHONY : LAFTRb
+
+# clean rule for target.
+LAFTRb/CMakeFiles/LAFTRb.dir/clean:
+	$(MAKE) -f LAFTRb/CMakeFiles/LAFTRb.dir/build.make LAFTRb/CMakeFiles/LAFTRb.dir/clean
+.PHONY : LAFTRb/CMakeFiles/LAFTRb.dir/clean
+
+# clean rule for target.
+clean: LAFTRb/CMakeFiles/LAFTRb.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory LAFTRc
+
+# Convenience name for "all" pass in the directory.
+LAFTRc/all: LAFTRc/CMakeFiles/exLAFTRc.dir/all
+
+.PHONY : LAFTRc/all
+
+# Convenience name for "clean" pass in the directory.
+LAFTRc/clean: LAFTRc/CMakeFiles/exLAFTRc.dir/clean
+LAFTRc/clean: LAFTRc/CMakeFiles/LAFTRc.dir/clean
+
+.PHONY : LAFTRc/clean
+
+# Convenience name for "preinstall" pass in the directory.
+LAFTRc/preinstall:
+
+.PHONY : LAFTRc/preinstall
+
+#=============================================================================
+# Target rules for target LAFTRc/CMakeFiles/exLAFTRc.dir
+
+# All Build rule for target.
+LAFTRc/CMakeFiles/exLAFTRc.dir/all:
+	$(MAKE) -f LAFTRc/CMakeFiles/exLAFTRc.dir/build.make LAFTRc/CMakeFiles/exLAFTRc.dir/depend
+	$(MAKE) -f LAFTRc/CMakeFiles/exLAFTRc.dir/build.make LAFTRc/CMakeFiles/exLAFTRc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles --progress-num=19,20,21,22,23,24,25,26,27 "Built target exLAFTRc"
+.PHONY : LAFTRc/CMakeFiles/exLAFTRc.dir/all
+
+# Include target in all.
+all: LAFTRc/CMakeFiles/exLAFTRc.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+LAFTRc/CMakeFiles/exLAFTRc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 LAFTRc/CMakeFiles/exLAFTRc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles 0
+.PHONY : LAFTRc/CMakeFiles/exLAFTRc.dir/rule
+
+# Convenience name for target.
+exLAFTRc: LAFTRc/CMakeFiles/exLAFTRc.dir/rule
+
+.PHONY : exLAFTRc
+
+# clean rule for target.
+LAFTRc/CMakeFiles/exLAFTRc.dir/clean:
+	$(MAKE) -f LAFTRc/CMakeFiles/exLAFTRc.dir/build.make LAFTRc/CMakeFiles/exLAFTRc.dir/clean
+.PHONY : LAFTRc/CMakeFiles/exLAFTRc.dir/clean
+
+# clean rule for target.
+clean: LAFTRc/CMakeFiles/exLAFTRc.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target LAFTRc/CMakeFiles/LAFTRc.dir
+
+# All Build rule for target.
+LAFTRc/CMakeFiles/LAFTRc.dir/all: LAFTRc/CMakeFiles/exLAFTRc.dir/all
+	$(MAKE) -f LAFTRc/CMakeFiles/LAFTRc.dir/build.make LAFTRc/CMakeFiles/LAFTRc.dir/depend
+	$(MAKE) -f LAFTRc/CMakeFiles/LAFTRc.dir/build.make LAFTRc/CMakeFiles/LAFTRc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles --progress-num= "Built target LAFTRc"
+.PHONY : LAFTRc/CMakeFiles/LAFTRc.dir/all
+
+# Build rule for subdir invocation for target.
+LAFTRc/CMakeFiles/LAFTRc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 LAFTRc/CMakeFiles/LAFTRc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/CMakeFiles 0
+.PHONY : LAFTRc/CMakeFiles/LAFTRc.dir/rule
+
+# Convenience name for target.
+LAFTRc: LAFTRc/CMakeFiles/LAFTRc.dir/rule
+
+.PHONY : LAFTRc
+
+# clean rule for target.
+LAFTRc/CMakeFiles/LAFTRc.dir/clean:
+	$(MAKE) -f LAFTRc/CMakeFiles/LAFTRc.dir/build.make LAFTRc/CMakeFiles/LAFTRc.dir/clean
+.PHONY : LAFTRc/CMakeFiles/LAFTRc.dir/clean
+
+# clean rule for target.
+clean: LAFTRc/CMakeFiles/LAFTRc.dir/clean
 
 .PHONY : clean
 

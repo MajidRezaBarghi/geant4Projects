@@ -32,24 +32,12 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "0")
 endif()
 
-if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exLAFTR" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exLAFTR")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exLAFTR"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/exLAFTR")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exLAFTR" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exLAFTR")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exLAFTR"
-         OLD_RPATH "/home/rbarghi/geant4.10.3-install/lib64:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exLAFTR")
-    endif()
-  endif()
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/LAFTRa/cmake_install.cmake")
+  include("/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/LAFTRb/cmake_install.cmake")
+  include("/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/LAFTRc/cmake_install.cmake")
+
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

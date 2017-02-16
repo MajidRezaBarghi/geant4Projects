@@ -89,17 +89,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -121,6 +110,17 @@ install/local: preinstall
 install/local/fast: install/local
 
 .PHONY : install/local/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -155,246 +155,95 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named exLAFTR
+# Target rules for targets named B2
 
 # Build rule for target.
-exLAFTR: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 exLAFTR
-.PHONY : exLAFTR
+B2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 B2
+.PHONY : B2
 
 # fast build rule for target.
-exLAFTR/fast:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/build
-.PHONY : exLAFTR/fast
+B2/fast:
+	$(MAKE) -f CMakeFiles/B2.dir/build.make CMakeFiles/B2.dir/build
+.PHONY : B2/fast
 
 #=============================================================================
-# Target rules for targets named LAFTR
+# Target rules for targets named exLAFTRa
 
 # Build rule for target.
-LAFTR: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LAFTR
-.PHONY : LAFTR
+exLAFTRa: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exLAFTRa
+.PHONY : exLAFTRa
 
 # fast build rule for target.
-LAFTR/fast:
-	$(MAKE) -f CMakeFiles/LAFTR.dir/build.make CMakeFiles/LAFTR.dir/build
-.PHONY : LAFTR/fast
-
-exLAFTR.o: exLAFTR.cc.o
-
-.PHONY : exLAFTR.o
-
-# target to build an object file
-exLAFTR.cc.o:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/exLAFTR.cc.o
-.PHONY : exLAFTR.cc.o
-
-exLAFTR.i: exLAFTR.cc.i
-
-.PHONY : exLAFTR.i
-
-# target to preprocess a source file
-exLAFTR.cc.i:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/exLAFTR.cc.i
-.PHONY : exLAFTR.cc.i
-
-exLAFTR.s: exLAFTR.cc.s
-
-.PHONY : exLAFTR.s
-
-# target to generate assembly for a file
-exLAFTR.cc.s:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/exLAFTR.cc.s
-.PHONY : exLAFTR.cc.s
-
-src/LAFTRActionInitiliazation.o: src/LAFTRActionInitiliazation.cc.o
-
-.PHONY : src/LAFTRActionInitiliazation.o
-
-# target to build an object file
-src/LAFTRActionInitiliazation.cc.o:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.o
-.PHONY : src/LAFTRActionInitiliazation.cc.o
-
-src/LAFTRActionInitiliazation.i: src/LAFTRActionInitiliazation.cc.i
-
-.PHONY : src/LAFTRActionInitiliazation.i
-
-# target to preprocess a source file
-src/LAFTRActionInitiliazation.cc.i:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.i
-.PHONY : src/LAFTRActionInitiliazation.cc.i
-
-src/LAFTRActionInitiliazation.s: src/LAFTRActionInitiliazation.cc.s
-
-.PHONY : src/LAFTRActionInitiliazation.s
-
-# target to generate assembly for a file
-src/LAFTRActionInitiliazation.cc.s:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRActionInitiliazation.cc.s
-.PHONY : src/LAFTRActionInitiliazation.cc.s
-
-src/LAFTRDetectorConstruction.o: src/LAFTRDetectorConstruction.cc.o
-
-.PHONY : src/LAFTRDetectorConstruction.o
-
-# target to build an object file
-src/LAFTRDetectorConstruction.cc.o:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRDetectorConstruction.cc.o
-.PHONY : src/LAFTRDetectorConstruction.cc.o
-
-src/LAFTRDetectorConstruction.i: src/LAFTRDetectorConstruction.cc.i
-
-.PHONY : src/LAFTRDetectorConstruction.i
-
-# target to preprocess a source file
-src/LAFTRDetectorConstruction.cc.i:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRDetectorConstruction.cc.i
-.PHONY : src/LAFTRDetectorConstruction.cc.i
-
-src/LAFTRDetectorConstruction.s: src/LAFTRDetectorConstruction.cc.s
-
-.PHONY : src/LAFTRDetectorConstruction.s
-
-# target to generate assembly for a file
-src/LAFTRDetectorConstruction.cc.s:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRDetectorConstruction.cc.s
-.PHONY : src/LAFTRDetectorConstruction.cc.s
-
-src/LAFTREventAction.o: src/LAFTREventAction.cc.o
-
-.PHONY : src/LAFTREventAction.o
-
-# target to build an object file
-src/LAFTREventAction.cc.o:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTREventAction.cc.o
-.PHONY : src/LAFTREventAction.cc.o
-
-src/LAFTREventAction.i: src/LAFTREventAction.cc.i
-
-.PHONY : src/LAFTREventAction.i
-
-# target to preprocess a source file
-src/LAFTREventAction.cc.i:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTREventAction.cc.i
-.PHONY : src/LAFTREventAction.cc.i
-
-src/LAFTREventAction.s: src/LAFTREventAction.cc.s
-
-.PHONY : src/LAFTREventAction.s
-
-# target to generate assembly for a file
-src/LAFTREventAction.cc.s:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTREventAction.cc.s
-.PHONY : src/LAFTREventAction.cc.s
-
-src/LAFTRPrimaryGeneratorAction.o: src/LAFTRPrimaryGeneratorAction.cc.o
-
-.PHONY : src/LAFTRPrimaryGeneratorAction.o
-
-# target to build an object file
-src/LAFTRPrimaryGeneratorAction.cc.o:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRPrimaryGeneratorAction.cc.o
-.PHONY : src/LAFTRPrimaryGeneratorAction.cc.o
-
-src/LAFTRPrimaryGeneratorAction.i: src/LAFTRPrimaryGeneratorAction.cc.i
-
-.PHONY : src/LAFTRPrimaryGeneratorAction.i
-
-# target to preprocess a source file
-src/LAFTRPrimaryGeneratorAction.cc.i:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRPrimaryGeneratorAction.cc.i
-.PHONY : src/LAFTRPrimaryGeneratorAction.cc.i
-
-src/LAFTRPrimaryGeneratorAction.s: src/LAFTRPrimaryGeneratorAction.cc.s
-
-.PHONY : src/LAFTRPrimaryGeneratorAction.s
-
-# target to generate assembly for a file
-src/LAFTRPrimaryGeneratorAction.cc.s:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRPrimaryGeneratorAction.cc.s
-.PHONY : src/LAFTRPrimaryGeneratorAction.cc.s
-
-src/LAFTRRunAction.o: src/LAFTRRunAction.cc.o
-
-.PHONY : src/LAFTRRunAction.o
-
-# target to build an object file
-src/LAFTRRunAction.cc.o:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.o
-.PHONY : src/LAFTRRunAction.cc.o
-
-src/LAFTRRunAction.i: src/LAFTRRunAction.cc.i
-
-.PHONY : src/LAFTRRunAction.i
-
-# target to preprocess a source file
-src/LAFTRRunAction.cc.i:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.i
-.PHONY : src/LAFTRRunAction.cc.i
-
-src/LAFTRRunAction.s: src/LAFTRRunAction.cc.s
-
-.PHONY : src/LAFTRRunAction.s
-
-# target to generate assembly for a file
-src/LAFTRRunAction.cc.s:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRRunAction.cc.s
-.PHONY : src/LAFTRRunAction.cc.s
-
-src/LAFTRSteppingAction.o: src/LAFTRSteppingAction.cc.o
-
-.PHONY : src/LAFTRSteppingAction.o
-
-# target to build an object file
-src/LAFTRSteppingAction.cc.o:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.o
-.PHONY : src/LAFTRSteppingAction.cc.o
-
-src/LAFTRSteppingAction.i: src/LAFTRSteppingAction.cc.i
-
-.PHONY : src/LAFTRSteppingAction.i
-
-# target to preprocess a source file
-src/LAFTRSteppingAction.cc.i:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.i
-.PHONY : src/LAFTRSteppingAction.cc.i
-
-src/LAFTRSteppingAction.s: src/LAFTRSteppingAction.cc.s
-
-.PHONY : src/LAFTRSteppingAction.s
-
-# target to generate assembly for a file
-src/LAFTRSteppingAction.cc.s:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRSteppingAction.cc.s
-.PHONY : src/LAFTRSteppingAction.cc.s
-
-src/LAFTRTrackingAction.o: src/LAFTRTrackingAction.cc.o
-
-.PHONY : src/LAFTRTrackingAction.o
-
-# target to build an object file
-src/LAFTRTrackingAction.cc.o:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRTrackingAction.cc.o
-.PHONY : src/LAFTRTrackingAction.cc.o
-
-src/LAFTRTrackingAction.i: src/LAFTRTrackingAction.cc.i
-
-.PHONY : src/LAFTRTrackingAction.i
-
-# target to preprocess a source file
-src/LAFTRTrackingAction.cc.i:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRTrackingAction.cc.i
-.PHONY : src/LAFTRTrackingAction.cc.i
-
-src/LAFTRTrackingAction.s: src/LAFTRTrackingAction.cc.s
-
-.PHONY : src/LAFTRTrackingAction.s
-
-# target to generate assembly for a file
-src/LAFTRTrackingAction.cc.s:
-	$(MAKE) -f CMakeFiles/exLAFTR.dir/build.make CMakeFiles/exLAFTR.dir/src/LAFTRTrackingAction.cc.s
-.PHONY : src/LAFTRTrackingAction.cc.s
+exLAFTRa/fast:
+	$(MAKE) -f LAFTRa/CMakeFiles/exLAFTRa.dir/build.make LAFTRa/CMakeFiles/exLAFTRa.dir/build
+.PHONY : exLAFTRa/fast
+
+#=============================================================================
+# Target rules for targets named LAFTRa
+
+# Build rule for target.
+LAFTRa: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LAFTRa
+.PHONY : LAFTRa
+
+# fast build rule for target.
+LAFTRa/fast:
+	$(MAKE) -f LAFTRa/CMakeFiles/LAFTRa.dir/build.make LAFTRa/CMakeFiles/LAFTRa.dir/build
+.PHONY : LAFTRa/fast
+
+#=============================================================================
+# Target rules for targets named exLAFTRb
+
+# Build rule for target.
+exLAFTRb: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exLAFTRb
+.PHONY : exLAFTRb
+
+# fast build rule for target.
+exLAFTRb/fast:
+	$(MAKE) -f LAFTRb/CMakeFiles/exLAFTRb.dir/build.make LAFTRb/CMakeFiles/exLAFTRb.dir/build
+.PHONY : exLAFTRb/fast
+
+#=============================================================================
+# Target rules for targets named LAFTRb
+
+# Build rule for target.
+LAFTRb: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LAFTRb
+.PHONY : LAFTRb
+
+# fast build rule for target.
+LAFTRb/fast:
+	$(MAKE) -f LAFTRb/CMakeFiles/LAFTRb.dir/build.make LAFTRb/CMakeFiles/LAFTRb.dir/build
+.PHONY : LAFTRb/fast
+
+#=============================================================================
+# Target rules for targets named exLAFTRc
+
+# Build rule for target.
+exLAFTRc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exLAFTRc
+.PHONY : exLAFTRc
+
+# fast build rule for target.
+exLAFTRc/fast:
+	$(MAKE) -f LAFTRc/CMakeFiles/exLAFTRc.dir/build.make LAFTRc/CMakeFiles/exLAFTRc.dir/build
+.PHONY : exLAFTRc/fast
+
+#=============================================================================
+# Target rules for targets named LAFTRc
+
+# Build rule for target.
+LAFTRc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LAFTRc
+.PHONY : LAFTRc
+
+# fast build rule for target.
+LAFTRc/fast:
+	$(MAKE) -f LAFTRc/CMakeFiles/LAFTRc.dir/build.make LAFTRc/CMakeFiles/LAFTRc.dir/build
+.PHONY : LAFTRc/fast
 
 # Help Target
 help:
@@ -405,35 +254,16 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... exLAFTR"
-	@echo "... LAFTR"
+	@echo "... B2"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... exLAFTR.o"
-	@echo "... exLAFTR.i"
-	@echo "... exLAFTR.s"
-	@echo "... src/LAFTRActionInitiliazation.o"
-	@echo "... src/LAFTRActionInitiliazation.i"
-	@echo "... src/LAFTRActionInitiliazation.s"
-	@echo "... src/LAFTRDetectorConstruction.o"
-	@echo "... src/LAFTRDetectorConstruction.i"
-	@echo "... src/LAFTRDetectorConstruction.s"
-	@echo "... src/LAFTREventAction.o"
-	@echo "... src/LAFTREventAction.i"
-	@echo "... src/LAFTREventAction.s"
-	@echo "... src/LAFTRPrimaryGeneratorAction.o"
-	@echo "... src/LAFTRPrimaryGeneratorAction.i"
-	@echo "... src/LAFTRPrimaryGeneratorAction.s"
-	@echo "... src/LAFTRRunAction.o"
-	@echo "... src/LAFTRRunAction.i"
-	@echo "... src/LAFTRRunAction.s"
-	@echo "... src/LAFTRSteppingAction.o"
-	@echo "... src/LAFTRSteppingAction.i"
-	@echo "... src/LAFTRSteppingAction.s"
-	@echo "... src/LAFTRTrackingAction.o"
-	@echo "... src/LAFTRTrackingAction.i"
-	@echo "... src/LAFTRTrackingAction.s"
+	@echo "... edit_cache"
+	@echo "... exLAFTRa"
+	@echo "... LAFTRa"
+	@echo "... exLAFTRb"
+	@echo "... LAFTRb"
+	@echo "... exLAFTRc"
+	@echo "... LAFTRc"
 .PHONY : help
 
 

@@ -117,7 +117,7 @@ CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 CMAKE_PREFIX_PATH:UNINITIALIZED=~/geant4.10.3-install
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=LAFTR
+CMAKE_PROJECT_NAME:STATIC=Project
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -176,6 +176,30 @@ LAFTR_BINARY_DIR:STATIC=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-buil
 
 //Value Computed by CMake
 LAFTR_SOURCE_DIR:STATIC=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR
+
+//Value Computed by CMake
+LAFTRa_BINARY_DIR:STATIC=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/LAFTRa
+
+//Value Computed by CMake
+LAFTRa_SOURCE_DIR:STATIC=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/LAFTRa
+
+//Value Computed by CMake
+LAFTRb_BINARY_DIR:STATIC=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/LAFTRb
+
+//Value Computed by CMake
+LAFTRb_SOURCE_DIR:STATIC=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/LAFTRb
+
+//Value Computed by CMake
+LAFTRc_BINARY_DIR:STATIC=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build/LAFTRc
+
+//Value Computed by CMake
+LAFTRc_SOURCE_DIR:STATIC=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/LAFTRc
+
+//Value Computed by CMake
+Project_BINARY_DIR:STATIC=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR-build
+
+//Value Computed by CMake
+Project_SOURCE_DIR:STATIC=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR
 
 //Build example with Geant4 UI and Vis drivers
 WITH_GEANT4_UIVIS:BOOL=ON
@@ -273,7 +297,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

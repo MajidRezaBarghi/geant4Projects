@@ -1,2 +1,5 @@
 # Hashes of file build rules.
-4380b3d09e1ada5378fa853c965fa05b CMakeFiles/LAFTR
+4380b3d09e1ada5378fa853c965fa05b CMakeFiles/B2
+247d7eecaa0577674c9e93ecd447c7db LAFTRa/CMakeFiles/LAFTRa
+b3ee6acb9b3be5de9313e1be7869fd00 LAFTRb/CMakeFiles/LAFTRb
+eebf044c78e0bee8ffddda0bf94c140d LAFTRc/CMakeFiles/LAFTRc

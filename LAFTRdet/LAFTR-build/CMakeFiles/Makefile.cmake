@@ -11,8 +11,15 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.6.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.6.2/CMakeSystem.cmake"
   "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/CMakeLists.txt"
-  "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/init_vis.mac"
-  "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/vis.mac"
+  "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/LAFTRa/CMakeLists.txt"
+  "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/LAFTRa/init_vis.mac"
+  "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/LAFTRa/vis.mac"
+  "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/LAFTRb/CMakeLists.txt"
+  "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/LAFTRb/init_vis.mac"
+  "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/LAFTRb/vis.mac"
+  "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/LAFTRc/CMakeLists.txt"
+  "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/LAFTRc/init_vis.mac"
+  "/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/LAFTRc/vis.mac"
   "/home/rbarghi/geant4.10.3-install/lib64/Geant4-10.3.0/Geant4Config.cmake"
   "/home/rbarghi/geant4.10.3-install/lib64/Geant4-10.3.0/Geant4ConfigVersion.cmake"
   "/home/rbarghi/geant4.10.3-install/lib64/Geant4-10.3.0/Geant4LibraryDepends-release.cmake"
@@ -44,13 +51,19 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "init_vis.mac"
-  "vis.mac"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "LAFTRa/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "LAFTRb/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "LAFTRc/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/exLAFTR.dir/DependInfo.cmake"
-  "CMakeFiles/LAFTR.dir/DependInfo.cmake"
+  "CMakeFiles/B2.dir/DependInfo.cmake"
+  "LAFTRa/CMakeFiles/exLAFTRa.dir/DependInfo.cmake"
+  "LAFTRa/CMakeFiles/LAFTRa.dir/DependInfo.cmake"
+  "LAFTRb/CMakeFiles/exLAFTRb.dir/DependInfo.cmake"
+  "LAFTRb/CMakeFiles/LAFTRb.dir/DependInfo.cmake"
+  "LAFTRc/CMakeFiles/exLAFTRc.dir/DependInfo.cmake"
+  "LAFTRc/CMakeFiles/LAFTRc.dir/DependInfo.cmake"
   )

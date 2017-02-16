@@ -14,7 +14,7 @@
 
 LAFTRDetectorConstruction::LAFTRDetectorConstruction()
 : G4VUserDetectorConstruction(),
-  fScoringVolume(0)
+  fScoringVolume(0),fSiPmV(0)
 { }
 
 LAFTRDetectorConstruction::~LAFTRDetectorConstruction()
@@ -32,6 +32,8 @@ G4VPhysicalVolume* LAFTRDetectorConstruction::Construct()
 
   G4Material* world_mat = nist->FindOrBuildMaterial("G4_AIR");
   G4Material* Scint_mat = nist->FindOrBuildMaterial("G4_PLASTIC_SC_VINYLTOLUENE");
+  G4Material* SiPm_mat = nist->FindOrBuildMaterial("G4_Si");
+  G4Material* Cu_mat = nist->FindOrBuildMaterial("G4_Cu");
 
 //This is where the physicalword is created
 
@@ -81,5 +83,32 @@ G4VPhysicalVolume* LAFTRDetectorConstruction::Construct()
                       0,
                       checkOverlaps);
   fScoringVolume = logicScint;
+
+  G4double Sx= 6.07 *mm;
+  G4double Sy= 6.07*mm;
+  G4double thickness = .1*Sx;
+  G4Box* SiPm =
+  new G4Box("SiPm",
+               Sx,
+               Sy,
+               thickness);
+  G4LogicalVolume* logicSiPm =
+  new G4LogicalVolume(SiPm,
+                        SiPm_mat,
+                        "SiPm");
+  new G4PVPlacement(0,
+                    G4ThreeVector(0*cm,0*cm,5*cm),
+                    logicSiPm,
+                    "SiPm",
+                    logicWorld,
+                    false,
+                    0,
+                    checkOverlaps);
+
+
+  G4Box* GPlate = new G4Box("GPlate",Sx,Sy,thickness);
+  G4LogicalVolume* logicGPlate = new G4LogicalVolume(GPlate,Cu_mat,"GPlate");
+  new G4PVPlacement(0,G4ThreeVector(0*cm,0*cm,5.1*cm),logicGPlate,"GPlate",logicWorld,false,0,checkOverlaps);
+  fSiPmV = logicSiPm;
   return physWorld;
 }

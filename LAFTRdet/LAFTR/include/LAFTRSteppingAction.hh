@@ -3,9 +3,12 @@
 
 #include "G4UserSteppingAction.hh"
 #include "globals.hh"
+#include "G4Track.hh"
 #include <fstream>
 
 class LAFTREventAction;
+
+class G4Track;
 
 class G4LogicalVolume;
 
@@ -24,6 +27,7 @@ class LAFTRSteppingAction : public G4UserSteppingAction
   private:
     LAFTREventAction*  fEventAction;
     G4LogicalVolume* fScoringVolume;
+    G4LogicalVolume* fSiPmV;
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

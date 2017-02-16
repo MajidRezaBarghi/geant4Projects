@@ -31,8 +31,6 @@
 /vis/scene/notifyHandlers
 /vis/set/textLayout
 /vis/set/textColour
-/vis/scene/add/axes
-/vis/scene/notifyHandlers
 /vis/set/colour red
 /vis/set/lineWidth 2
 /vis/scene/add/frame
@@ -46,6 +44,10 @@
 /vis/geometry/set/visibility World 0 false
 /vis/scene/notifyHandlers
 /vis/geometry/set/visibility Scint 0 true
+/vis/scene/notifyHandlers
+/vis/geometry/set/visibility SiPm 0 true
+/vis/scene/notifyHandlers
+/vis/geometry/set/visibility GPlate 0 true
 /vis/scene/notifyHandlers
 /vis/viewer/set/style surface
 /vis/viewer/set/hiddenMarker true
@@ -67,3 +69,5 @@
 /event/verbose 0
 /vis/viewer/zoom .25
 /vis/viewer/refresh
+/run/beamOn 25000
+/vis/scene/notifyHandlers scene-0

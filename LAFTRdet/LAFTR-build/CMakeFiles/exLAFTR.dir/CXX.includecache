@@ -65,6 +65,8 @@ G4UserSteppingAction.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/include/G4UserSteppingAction.hh
 globals.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/include/globals.hh
+G4Track.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/LAFTR/include/G4Track.hh
 fstream
 -
 

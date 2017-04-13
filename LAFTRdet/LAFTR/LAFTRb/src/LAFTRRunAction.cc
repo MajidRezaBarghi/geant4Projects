@@ -31,6 +31,11 @@ void LAFTRRunAction::BeginOfRunAction(const G4Run*)
 
 void LAFTRRunAction::EndOfRunAction(const G4Run* run)
 {
+  G4double area = 201.07;
+  G4double countsin = 25000;
+  G4double results = 0.0;
+  results = area*(counts/25000.0);
+  G4cout<<"The effect area is: "<<results<<G4endl;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

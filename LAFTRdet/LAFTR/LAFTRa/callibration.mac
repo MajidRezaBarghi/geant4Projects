@@ -1,0 +1,27 @@
+#This mac file is intended to create a model of a cesium-137 source.
+#The model is simplified to project a isotropic 662 keV wave.
+
+
+/vis/viewer/set/autoRefresh true
+/vis/verbose warnings
+/gps/particle gamma
+#/gps/ene/type Mono
+/gps/ene/mono 662 keV
+#/gps/ene/type
+3/gps/ene/ezero 7 MeV
+
+/gps/pos/type Surface
+/gps/pos/shape Sphere
+#/gps/pos/halfx 5 cm
+#/gps/pos/halfy 5 cm
+/gps/pos/radius 5.085 mm
+/gps/pos/centre 0 0 -50 mm
+
+/gps/direction 0 0 1
+#
+# For file-based drivers, use this to create an empty detector view:
+#/vis/viewer/flush
+/control/verbose 0
+/tracking/verbose 0
+/event/verbose 0
+/vis/viewer/zoom .25

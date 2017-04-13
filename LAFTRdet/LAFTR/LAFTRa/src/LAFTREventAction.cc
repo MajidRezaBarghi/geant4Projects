@@ -11,7 +11,7 @@ using namespace std;
 ofstream myfile1;
 ofstream mySiPm;
 LAFTREventAction::LAFTREventAction(LAFTRRunAction* runAction)
-: G4UserEventAction()
+: G4UserEventAction(),fRunAction(runAction)
 {myfile1.open("events.txt");myfile1<<"energy\n";
   mySiPm.open("SiPm.txt");mySiPm<<"energy\n";
 }
@@ -31,12 +31,13 @@ void LAFTREventAction::BeginOfEventAction(const G4Event*)
 void LAFTREventAction::EndOfEventAction(const G4Event* event)
 {
   //G4cout<< tedep << G4endl;
-  if (fEdep != 0){
+  if (fEdep > 100* keV){
   myfile1<< fEdep << "\n";
   fEdep = 0;
+  fRunAction->AddCounts();
 };
-  if(fsedep != 0){
-    mySiPm<<fsedep<<"\n";
-    fsedep = 0;
-  }
+  // if(fsedep != 0){
+  //   mySiPm<<fsedep<<"\n";
+  //   fsedep = 0;
+  // }
 }

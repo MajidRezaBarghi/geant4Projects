@@ -22,7 +22,7 @@ class LAFTREventAction : public G4UserEventAction
     void AddSEdep(G4double sedep){fsedep += sedep;}
 
   private:
-  //   LAFTRRunAction* fRunAction;
+    LAFTRRunAction* fRunAction;
     G4double     fEdep;
     G4double     fsedep;
 };

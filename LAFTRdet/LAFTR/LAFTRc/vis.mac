@@ -119,9 +119,9 @@
 
 /gps/pos/type Plane
 /gps/pos/shape Square
-/gps/pos/halfx 5 cm
-/gps/pos/halfy 5 cm
-/gps/pos/centre 0 0 -50 cm
+/gps/pos/halfx 38.90 mm
+/gps/pos/halfy 38.24 mm
+/gps/pos/centre 0 0 -150 mm
 
 /gps/direction 0 0 1
 #

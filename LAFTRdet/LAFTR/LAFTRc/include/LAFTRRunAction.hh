@@ -15,6 +15,7 @@ class G4Run;
 
 class LAFTRRunAction : public G4UserRunAction
 {
+  G4double counts = 0;
   public:
     LAFTRRunAction();
     virtual ~LAFTRRunAction();
@@ -23,7 +24,7 @@ class LAFTRRunAction : public G4UserRunAction
     virtual void BeginOfRunAction(const G4Run*);
     virtual void   EndOfRunAction(const G4Run*);
 
-    // void AddEdep (G4double edep);
+    void AddCounts (){counts = 1.0+counts;};
 
   // private:
   //   G4Accumulable<G4double> fEdep;

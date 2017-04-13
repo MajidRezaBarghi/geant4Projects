@@ -18,11 +18,11 @@ class LAFTRRunAction : public G4UserRunAction
   public:
     LAFTRRunAction();
     virtual ~LAFTRRunAction();
-
+    G4double counts =0;
     // virtual G4Run* GenerateRun();
     virtual void BeginOfRunAction(const G4Run*);
     virtual void   EndOfRunAction(const G4Run*);
-
+    void AddCounts (){counts = 1.0+counts;};
     // void AddEdep (G4double edep);
 
   // private:

@@ -46,9 +46,7 @@
 /vis/geometry/set/visibility Scint 0 true
 /vis/scene/notifyHandlers
 /vis/geometry/set/visibility SiPm 0 true
-/vis/scene/notifyHandlers
 /vis/geometry/set/visibility GPlate 0 true
-/vis/scene/notifyHandlers
 /vis/viewer/set/style surface
 /vis/viewer/set/hiddenMarker true
 /vis/viewer/set/viewpointThetaPhi 120 150
@@ -60,14 +58,14 @@
 /gps/ene/ezero 7 MeV
 /gps/pos/type Plane
 /gps/pos/shape Square
-/gps/pos/halfx 5 cm
-/gps/pos/halfy 5 cm
-/gps/pos/centre 0 0 -50 cm
+/gps/pos/halfx 14.18 mm
+/gps/pos/halfy 14.18 mm
+/gps/pos/centre 0 0 -50 mm
 /gps/direction 0 0 1
 /control/verbose 0
 /tracking/verbose 0
 /event/verbose 0
 /vis/viewer/zoom .25
 /vis/viewer/refresh
-/run/beamOn 100
+/run/beamOn 25000
 /vis/scene/notifyHandlers scene-0

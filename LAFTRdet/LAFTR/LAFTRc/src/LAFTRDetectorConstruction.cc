@@ -61,14 +61,20 @@ G4VPhysicalVolume* LAFTRDetectorConstruction::Construct()
   G4double hz = 5.0*cm;
   G4double startAngle = 0.0*deg;
   G4double spanningAngle = 360.0*deg;
+  //
+  // G4Tubs* Scint =
+  //   new G4Tubs ("Scint",
+  //               innerRadius,
+  //               outerRadius,
+  //               hz,
+  //               startAngle,
+  //               spanningAngle);
 
-  G4Tubs* Scint =
-    new G4Tubs ("Scint",
-                innerRadius,
-                outerRadius,
-                hz,
-                startAngle,
-                spanningAngle);
+  G4double Sx = 38.90*mm;
+  G4double Sy = 38.24*mm;
+  G4double Sz = 103.3*mm;
+
+  G4Box* Scint = new G4Box("Sint",Sx,Sy,Sz);
 
   G4LogicalVolume* logicScint =
     new G4LogicalVolume( Scint,
@@ -84,31 +90,31 @@ G4VPhysicalVolume* LAFTRDetectorConstruction::Construct()
                       checkOverlaps);
   fScoringVolume = logicScint;
 
-  G4double Sx= 6.07 *mm;
-  G4double Sy= 6.07*mm;
-  G4double thickness = .1*Sx;
-  G4Box* SiPm =
-  new G4Box("SiPm",
-               Sx,
-               Sy,
-               thickness);
-  G4LogicalVolume* logicSiPm =
-  new G4LogicalVolume(SiPm,
-                        SiPm_mat,
-                        "SiPm");
-  new G4PVPlacement(0,
-                    G4ThreeVector(0*cm,0*cm,5*cm),
-                    logicSiPm,
-                    "SiPm",
-                    logicWorld,
-                    false,
-                    0,
-                    checkOverlaps);
-
-
-  G4Box* GPlate = new G4Box("GPlate",Sx,Sy,thickness);
-  G4LogicalVolume* logicGPlate = new G4LogicalVolume(GPlate,Cu_mat,"GPlate");
-  new G4PVPlacement(0,G4ThreeVector(0*cm,0*cm,5.1*cm),logicGPlate,"GPlate",logicWorld,false,0,checkOverlaps);
-  fSiPmV = logicSiPm;
+  // G4double Sx= 6.07 *mm;
+  // G4double Sy= 6.07*mm;
+  // G4double thickness = .1*Sx;
+  // G4Box* SiPm =
+  // new G4Box("SiPm",
+  //              Sx,
+  //              Sy,
+  //              thickness);
+  // G4LogicalVolume* logicSiPm =
+  // new G4LogicalVolume(SiPm,
+  //                       SiPm_mat,
+  //                       "SiPm");
+  // new G4PVPlacement(0,
+  //                   G4ThreeVector(0*cm,0*cm,5*cm),
+  //                   logicSiPm,
+  //                   "SiPm",
+  //                   logicWorld,
+  //                   false,
+  //                   0,
+  //                   checkOverlaps);
+  //
+  //
+  // G4Box* GPlate = new G4Box("GPlate",Sx,Sy,thickness);
+  // G4LogicalVolume* logicGPlate = new G4LogicalVolume(GPlate,Cu_mat,"GPlate");
+  // new G4PVPlacement(0,G4ThreeVector(0*cm,0*cm,5.1*cm),logicGPlate,"GPlate",logicWorld,false,0,checkOverlaps);
+  // fSiPmV = logicSiPm;
   return physWorld;
 }

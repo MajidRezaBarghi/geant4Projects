@@ -54,17 +54,20 @@
 /vis/viewer/refresh
 /vis/verbose warnings
 /gps/particle ion
-/gps/ion 55 137
+/gps/ion 63 154
 /gps/energy 0 keV
-/gps/pos/type Surface
-/gps/pos/shape Sphere
+/gps/pos/type Plane
+/gps/pos/shape Circle
 /gps/pos/radius 5.085 mm
 /gps/pos/centre 0 0 -50 mm
 /gps/ang/surfnorm true
+/gps/direction 0 0 1
 /control/verbose 0
 /tracking/verbose 0
 /event/verbose 0
 /vis/viewer/zoom .25
 /vis/viewer/refresh
-/run/beamOn 25000
+/run/beamOn 100
 /vis/scene/notifyHandlers scene-0
+/run/beamOn 2500000
+/run/abort

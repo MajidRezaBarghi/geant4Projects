@@ -117,10 +117,12 @@
 #/gps/ene/type Exp
 #/gps/ene/ezero 7 MeV
 /gps/particle ion 
-/gps/ion 55 137
+/gps/ion 63 154
 /gps/energy 0 keV
-/gps/pos/type Surface
-/gps/pos/shape Sphere
+/gps/pos/type Plane
+/gps/pos/shape Circle 
+#/gps/pos/type Surface
+#/gps/pos/shape Sphere
 #/gps/pos/halfx 5 cm
 #/gps/pos/halfy 5 cm
 /gps/pos/radius 5.085 mm
@@ -129,7 +131,7 @@
 /gps/ang/surfnorm true
 #/gps/ang/
 
-#/gps/direction 0 0 1
+/gps/direction 0 0 1
 #
 # For file-based drivers, use this to create an empty detector view:
 #/vis/viewer/flush

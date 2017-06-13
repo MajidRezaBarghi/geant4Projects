@@ -1,42 +1,45 @@
+#Majid Reza Barghi
+#NASA LAFTR Project
+#The following script takes in a .txt file containing the counts and energy deposited
+#in a cylinder on polyvinly tulene and performs a Weierstrass transform (gaussian blur)
+#on the histogram. This allows a more continous smoth function to be used to calibrate the 6 channel ADD board
+
 from astropy.io  import ascii
+import matplotlib.pyplot as plt
+import numpy as np
 
 data= ascii.read('events.txt')
-
-#print(data['energy'])
-
-import matplotlib.pyplot as plt
 nbins=(0,.1,.250,.400,.800,1.6,2.5,6)
-norm = False
-plt.hist(data['energy'],bins=70)
-plt.show()
-
-# if norm:
-#     plt.title("Normalized 6 Energy Channel Historgram of Plastic Scintillator")
-#     plt.show()
-#     #plt.savefig('NormalizedHist.png')
-# else:
-#     plt.title("6 Energy Channel Historgram of Plastic Scintillator")
-#     #plt.show()
-#     plt.savefig('RegularHist.png')
-
-
-import numpy as np
-data['energy'] = data['energy']*1000
-hist, n2bins = np.histogram(data['energy'],bins=1000)
-
 binwith = 0.0
-print(n2bins)
+norm = False
+display = False
+
+#getting the data
+data['energy'] = data['energy']*1000
+
+hist, n2bins = np.histogram(data['energy'],bins=1000)
+#simple test histogram to show the output
+if display == True:
+    plt.hist(data['energy'],bins=70)
+    plt.show()
+
+
+#applying normalization to the historgram bincout/binwidth this comes out to counts/keV
 center = (n2bins[:-1]+n2bins[1:])/2
 width =np.diff(n2bins)
 for x in range(0,7):
     binwith = n2bins[x+1]-n2bins[x]
     hist[x] = hist[x]/binwith
+
+#Lables for the first Histogram
 plt.ylabel("counts/keV")
 plt.xlabel("Energy (keV)")
 plt.title("Energy Deposited in Plastic Scintilator by CS-137 Spectra")
 plt.bar(center,hist,width=width,align="center")
-print(binwith)
+
 binwith1 = 2
+
+# setting the constants for the Weierstrass transform
 sigma = .001
 scal=240
 scalf=float(scal)
@@ -47,10 +50,16 @@ g = xg*0.
 center = scal
 c = xf*0.
 t = np.linspace(0,1,1000)
+
+#filling in the temp array.
 for i in range(0,1000):
     t[i] = float(hist[i])
+
+#Creating the gaussian function
 for k in range(0,4*binwith1*scal):
     g[k] = (1.0/np.sqrt(2.0*pi))*np.exp( -((xg[k]/sigma)**2)/2.0)
+
+#Performing the convolution:
 for i in range(0,1000):
     for j in range(-2*binwith1*scal,2*binwith1*scal):
         location = i+j
@@ -58,24 +67,9 @@ for i in range(0,1000):
         if location >= 0 and location < 1000:
             c[location] = c[location] + t[i]*g[j+2*binwith1*scal] / (scalf)
 
-# fig, ax = plt.subplots(figsize =(8,3))
-# ax.bar(center,hist,width=width,align='center')
-# ax.set_xticks(n2bins)
+# Plot and save figures
 plt.savefig("Results.png")
 plt.close()
 plt.plot(xf,c)
 plt.savefig("conv.png")
-plt.close()
-plt.plot(data,'r.')
 plt.show()
-# data2 = ascii.read('SiPm.txt')
-# hist2, Sbins = np.histogram(data2['energy'],bins=5)
-# center2 = (Sbins[:-1]+Sbins[1:])/2
-# width2 = np.diff(Sbins)
-# plt.ylabel("counts")
-# plt.xlabel("Energy (MeV)")
-# plt.title("Energy Deposited by electrons in Silicon Slab by TFG Spectra")
-# plt.bar(center2,hist2,width=width2,align="center")
-# plt.savefig("SipmResults.png")
-
-# plt.show()

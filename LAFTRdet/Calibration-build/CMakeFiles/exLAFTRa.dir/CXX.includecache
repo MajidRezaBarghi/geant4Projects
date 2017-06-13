@@ -177,6 +177,8 @@ LAFTREventAction.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/LAFTREventAction.hh
 LAFTRDetectorConstruction.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/LAFTRDetectorConstruction.hh
+G4ParticleTable.hh
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/G4ParticleTable.hh
 G4Step.hh
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/G4Step.hh
 G4Event.hh

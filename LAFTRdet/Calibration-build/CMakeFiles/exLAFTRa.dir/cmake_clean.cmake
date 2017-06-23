@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/exLAFTRa.dir/exLAFTRa.cc.o"
+  "CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.o"
+  "CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.o"
   "CMakeFiles/exLAFTRa.dir/src/LAFTRActionInitiliazation.cc.o"
   "CMakeFiles/exLAFTRa.dir/src/LAFTRDetectorConstruction.cc.o"
   "CMakeFiles/exLAFTRa.dir/src/LAFTREventAction.cc.o"

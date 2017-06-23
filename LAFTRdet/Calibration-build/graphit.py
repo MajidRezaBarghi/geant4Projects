@@ -7,6 +7,11 @@
 from astropy.io  import ascii
 import matplotlib.pyplot as plt
 import numpy as np
+from matplotlib.widgets import Slider
+plt.switch_backend('qt5agg')
+from progressbar import ProgressBar
+#setting up the progress bar
+p = ProgressBar()
 
 data= ascii.read('events.txt')
 nbins=(0,.1,.250,.400,.800,1.6,2.5,6)
@@ -17,7 +22,8 @@ display = False
 #getting the data
 data['energy'] = data['energy']*1000
 
-hist, n2bins = np.histogram(data['energy'],bins=1000)
+BINS = 500
+hist, n2bins = np.histogram(data['energy'],bins=BINS)
 #simple test histogram to show the output
 if display == True:
     plt.hist(data['energy'],bins=70)
@@ -40,19 +46,19 @@ plt.bar(center,hist,width=width,align="center")
 binwith1 = 2
 
 # setting the constants for the Weierstrass transform
-sigma = .001
+sigma = .0021
 scal=240
 scalf=float(scal)
 pi = np.pi
-xf = np.linspace(0.0,n2bins[-1],1000)
+xf = np.linspace(500.0,n2bins[-1],BINS)
 xg=np.linspace(float(-2*binwith1),float(2*binwith1),4*binwith1*scal)
 g = xg*0.
 center = scal
 c = xf*0.
-t = np.linspace(0,1,1000)
+t = np.linspace(0,1,BINS)
 
 #filling in the temp array.
-for i in range(0,1000):
+for i in range(0,BINS):
     t[i] = float(hist[i])
 
 #Creating the gaussian function
@@ -60,16 +66,22 @@ for k in range(0,4*binwith1*scal):
     g[k] = (1.0/np.sqrt(2.0*pi))*np.exp( -((xg[k]/sigma)**2)/2.0)
 
 #Performing the convolution:
-for i in range(0,1000):
+for i in p(range(0,BINS,1)):
     for j in range(-2*binwith1*scal,2*binwith1*scal):
         location = i+j
         #Don't go outside the array:
-        if location >= 0 and location < 1000:
+        if location >= 0 and location < BINS:
             c[location] = c[location] + t[i]*g[j+2*binwith1*scal] / (scalf)
 
+#Slider implementation
+# hsigma = np.linspace(.01,.05,.005)
+# axsig = Slider(hsigma,'sigma',0.01,.05,.05)
 # Plot and save figures
 plt.savefig("Results.png")
 plt.close()
 plt.plot(xf,c)
 plt.savefig("conv.png")
 plt.show()
+
+#Slider Implementation
+# def update (val):

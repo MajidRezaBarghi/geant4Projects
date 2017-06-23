@@ -207,6 +207,60 @@ exLAFTRa.cc.s:
 	$(MAKE) -f CMakeFiles/exLAFTRa.dir/build.make CMakeFiles/exLAFTRa.dir/exLAFTRa.cc.s
 .PHONY : exLAFTRa.cc.s
 
+src/EmStandardPhysics.o: src/EmStandardPhysics.cc.o
+
+.PHONY : src/EmStandardPhysics.o
+
+# target to build an object file
+src/EmStandardPhysics.cc.o:
+	$(MAKE) -f CMakeFiles/exLAFTRa.dir/build.make CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.o
+.PHONY : src/EmStandardPhysics.cc.o
+
+src/EmStandardPhysics.i: src/EmStandardPhysics.cc.i
+
+.PHONY : src/EmStandardPhysics.i
+
+# target to preprocess a source file
+src/EmStandardPhysics.cc.i:
+	$(MAKE) -f CMakeFiles/exLAFTRa.dir/build.make CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.i
+.PHONY : src/EmStandardPhysics.cc.i
+
+src/EmStandardPhysics.s: src/EmStandardPhysics.cc.s
+
+.PHONY : src/EmStandardPhysics.s
+
+# target to generate assembly for a file
+src/EmStandardPhysics.cc.s:
+	$(MAKE) -f CMakeFiles/exLAFTRa.dir/build.make CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.s
+.PHONY : src/EmStandardPhysics.cc.s
+
+src/GammaPhysics.o: src/GammaPhysics.cc.o
+
+.PHONY : src/GammaPhysics.o
+
+# target to build an object file
+src/GammaPhysics.cc.o:
+	$(MAKE) -f CMakeFiles/exLAFTRa.dir/build.make CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.o
+.PHONY : src/GammaPhysics.cc.o
+
+src/GammaPhysics.i: src/GammaPhysics.cc.i
+
+.PHONY : src/GammaPhysics.i
+
+# target to preprocess a source file
+src/GammaPhysics.cc.i:
+	$(MAKE) -f CMakeFiles/exLAFTRa.dir/build.make CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.i
+.PHONY : src/GammaPhysics.cc.i
+
+src/GammaPhysics.s: src/GammaPhysics.cc.s
+
+.PHONY : src/GammaPhysics.s
+
+# target to generate assembly for a file
+src/GammaPhysics.cc.s:
+	$(MAKE) -f CMakeFiles/exLAFTRa.dir/build.make CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.s
+.PHONY : src/GammaPhysics.cc.s
+
 src/LAFTRActionInitiliazation.o: src/LAFTRActionInitiliazation.cc.o
 
 .PHONY : src/LAFTRActionInitiliazation.o
@@ -440,6 +494,12 @@ help:
 	@echo "... exLAFTRa.o"
 	@echo "... exLAFTRa.i"
 	@echo "... exLAFTRa.s"
+	@echo "... src/EmStandardPhysics.o"
+	@echo "... src/EmStandardPhysics.i"
+	@echo "... src/EmStandardPhysics.s"
+	@echo "... src/GammaPhysics.o"
+	@echo "... src/GammaPhysics.i"
+	@echo "... src/GammaPhysics.s"
 	@echo "... src/LAFTRActionInitiliazation.o"
 	@echo "... src/LAFTRActionInitiliazation.i"
 	@echo "... src/LAFTRActionInitiliazation.s"

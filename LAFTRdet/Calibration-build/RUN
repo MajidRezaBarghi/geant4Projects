@@ -1,15 +1,17 @@
 #!/bin/bash
-echo "running scripts and compiling data..."
-make
-echo "sucessfully compiled running GEAN4.."
-sed -i "15s/run\/beamOn .*/run\/beamOn $1/" $2
-./exLAFTRa $2
-echo -ne '\n'
-echo -ne "running python graphit.py.\r"
-sleep 1
-echo -ne "running python graphit.py..\r"
-sleep 1 
-echo -ne "running python graphit.py...\r"
-sleep 1
-echo -ne '\n'
-python graphit.py 
+if [ "$1" != "-p" ];then
+	echo "running scripts and compiling data..."
+	make
+	echo "sucessfully compiled running GEAN4.."
+	sed -i "15s/run\/beamOn .*/run\/beamOn $1/" $2
+	./exLAFTRa $2
+	echo -ne '\n'
+	echo -ne "running python graphit.py.\r"
+	sleep 1
+	echo -ne "running python graphit.py..\r"
+	sleep 1 
+	echo -ne "running python graphit.py...\r"
+	sleep 1
+	echo -ne '\n'
+fi
+python ../Calibration/graphit.py 

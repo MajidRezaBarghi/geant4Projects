@@ -87,6 +87,9 @@ G4VPhysicalVolume* LAFTRDetectorConstruction::Construct()
   G4double Sx= 6.07 *mm;
   G4double Sy= 6.07*mm;
   G4double thickness = .1*Sx;
+  //This portion of the code has been commented out because there were thoughts of placing a slab of silicon
+  //underneath the detector. We would have then shot the detector with a direct electron beam and see if a
+  //significant amount of energy was deposited to harm the SiPms inside the lab.
   // G4Box* SiPm =
   // new G4Box("SiPm",
   //              Sx,

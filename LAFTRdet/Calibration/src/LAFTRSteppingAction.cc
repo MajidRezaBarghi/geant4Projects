@@ -2,6 +2,7 @@
 #include "LAFTREventAction.hh"
 #include "LAFTRDetectorConstruction.hh"
 
+#include "G4ParticleTable.hh"
 #include "G4Step.hh"
 #include "G4Event.hh"
 #include "G4RunManager.hh"
@@ -12,6 +13,7 @@
 
 using namespace std;
 ofstream myfile;
+ofstream spectra;
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 int counter = 0;
 LAFTRSteppingAction::LAFTRSteppingAction(LAFTREventAction* eventAction)
@@ -24,29 +26,30 @@ LAFTRSteppingAction::LAFTRSteppingAction(LAFTREventAction* eventAction)
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 LAFTRSteppingAction::~LAFTRSteppingAction()
-{G4cout<< counter<<G4endl;myfile.close();}
+{myfile.close();}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 void LAFTRSteppingAction::UserSteppingAction(const G4Step* step)
 {
+  //Getting the plastic scintilator volume in the simulation
   if (!fScoringVolume) {
     const LAFTRDetectorConstruction* detectorConstruction
       = static_cast<const LAFTRDetectorConstruction*>
         (G4RunManager::GetRunManager()->GetUserDetectorConstruction());
     fScoringVolume = detectorConstruction->GetScoringVolume();
   }
-  if (!fSiPmV) {
-    const LAFTRDetectorConstruction* detectorConstruction
-      = static_cast<const LAFTRDetectorConstruction*>
-        (G4RunManager::GetRunManager()->GetUserDetectorConstruction());
-    fSiPmV = detectorConstruction->GetSiPmVolume();
-  }
 
   // get volume of the current step
   G4LogicalVolume* volume
     = step->GetPreStepPoint()->GetTouchableHandle()
       ->GetVolume()->GetLogicalVolume();
+
+  //Geting the particle definition
+  G4Track* track = step->GetTrack();
+  G4ParticleDefinition* particleName = track->GetDefinition();
+  //G4cout << particleName->GetParticleName() << G4endl;
+  G4ParticleDefinition* isParticleGamma = G4ParticleTable::GetParticleTable()->FindParticle("gamma");
 
   // check if we are in scoring volume
   if (volume == fScoringVolume){
@@ -60,7 +63,7 @@ void LAFTRSteppingAction::UserSteppingAction(const G4Step* step)
   //
       //G4cout<< edepStep << "\n";
       //G4cout<<"here"<<"\n";
-      G4cout << G4BestUnit(edepStep, "Energy")<<"\n";
+      //G4cout << G4BestUnit(edepStep, "Energy")<<"\r";
       fEventAction->AddEdep(edepStep);
       //enable tracking on the partcile that step updatated.
       //G4Track* track = step->GetTrack();
@@ -70,10 +73,12 @@ void LAFTRSteppingAction::UserSteppingAction(const G4Step* step)
   if (volume == fSiPmV ){
     G4double SedepStep = step->GetTotalEnergyDeposit();
     if (SedepStep != 0){
-      G4cout<<G4BestUnit(SedepStep, "Energy")<<G4endl;
+      // if(isParticleGamma == particleName ){
+      //G4cout<<G4BestUnit(SedepStep, "Energy")<<"\r";
       fEventAction->AddSEdep (SedepStep);
       //G4Track* track = step->GetTrack();
       //G4cout<<track->GetDefinition()->GetParticleName() <<G4endl;
+    // }
     }
   };
 }

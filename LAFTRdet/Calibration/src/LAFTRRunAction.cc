@@ -25,12 +25,15 @@ LAFTRRunAction::~LAFTRRunAction()
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 void LAFTRRunAction::BeginOfRunAction(const G4Run*)
-{}
+{
+  G4cout<<"Begining RunAction...\n";
+}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 void LAFTRRunAction::EndOfRunAction(const G4Run* run)
 {
+  //This is where the effective area was calculated. There is not need for this inside calibration code but should be placed in comparison code.
   G4double area = 461.482;
   G4double countsin = 25000;
   G4double results = 0.0;

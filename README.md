@@ -1,5 +1,5 @@
 # geant4Projects
-... Geant4 simulations for UCSC LAFTR Projects and etc.The LAFTR folder contains three diffirent GEANT simmulations with varying plastic scintilator:
+Geant4 simulations for UCSC LAFTR Projects and etc.The LAFTR folder contains three diffirent GEANT simmulations with varying plastic scintilator:
 
 * Cylinder radius = 12.6mm z = 36.00mm
 * Cube 14.8mm

@@ -10,7 +10,7 @@ This simmulation shoots a 6MeV gamma-ray beam at the detector from 50mm away. Th
 The Calibrations folder contains a GEANT simulation of radioactive decay from CS-137 and E-152 into a cylinder r = 12.6mm and z = 36.0mm of Polyvinly_tulene.Only events where energies deposited are above 500 KeV are recorded. The recorded energies are then binned via python into a histogram that is saved as Results.png. The binning is chosen to best represents results from an Multi-Channel Analyzer. The Histogram is then convolved agaisnt a gaussian to provide a more continous spectrum. A macro file (.mac) must be written and provided for the program to run through the bash script. 
 
 ## Features to be added 
-..*Slider to adjust sigma in the gaussian blur
+* Slider to adjust sigma in the gaussian blur
 
 ## Notes 
 1. All python graphics are done using the QT5 as the backend in matplotlib. 

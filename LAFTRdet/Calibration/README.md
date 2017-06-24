@@ -11,3 +11,26 @@ cp ../Calibration/RUN .
 1. Eu-152 srouce run1.mac
 2. Cs-137 source run2.mac
 To enter and use old data from previous run use the -p argument alone to just retrieve convolved data.
+
+## Example output
+
+```
+[rbarghi@ Calibration-build]$ ./RUN 1000 run1.mac 
+running scripts and compiling data...
+Scanning dependencies of target exLAFTRa
+[  8%] Building CXX object CMakeFiles/exLAFTRa.dir/src/LAFTRDetectorConstruction.cc.o
+[ 16%] Building CXX object CMakeFiles/exLAFTRa.dir/src/LAFTRRunAction.cc.o
+[ 25%] Linking CXX executable exLAFTRa
+[100%] Built target exLAFTRa
+sucessfully compiled running GEAN4..
+
+*************************************************************
+ Geant4 version Name: geant4-10-03    (9-December-2016)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+```
+
+

@@ -1,9 +1,9 @@
 # geant4Projects
 ...geant4 simulations for UCSC LAFTR Projects and etc.The LAFTR folder contains three diffirent GEANT simmulations with varying plastic scintilator:
 
-*Cylinder radius = 12.6mm z = 36.00mm
-*Cube 14.8mm
-*cube 38mmX38mmX103mm
+* Cylinder radius = 12.6mm z = 36.00mm
+* Cube 14.8mm
+* cube 38mmX38mmX103mm
 
 This simmulation shoots a 6MeV gamma-ray beam at the detector from 50mm away. Then all acumulated energies deposited in the scintilator are written to a text file called events.txt for later use. 
 

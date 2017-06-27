@@ -21,3 +21,6 @@ The Calibrations folder contains a GEANT simulation of radioactive decay from CS
 ## Notes 
 1. All python graphics are done using the QT5 as the backend in matplotlib. 
 2. To Run all any GEANT4 related libraries GEANT4 must be installed on your system.
+3. Installtion for Geant is here: http://geant4.web.cern.ch/geant4/UserDocumentation/UsersGuides/InstallationGuide/html/
+4. Download Geant4 for your computer https://geant4.web.cern.ch/geant4/support/download.shtml
+

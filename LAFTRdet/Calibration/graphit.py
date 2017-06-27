@@ -10,9 +10,10 @@ import numpy as np
 from matplotlib.widgets import Slider
 plt.switch_backend('qt5agg')
 from progressbar import ProgressBar
+# from matplotlib.widgets import Slider, Button, RadioButtons
+
 #setting up the progress bar
 p = ProgressBar()
-
 data= ascii.read('events.txt')
 nbins=(0,.1,.250,.400,.800,1.6,2.5,6)
 binwith = 0.0
@@ -73,6 +74,7 @@ for i in p(range(0,BINS,1)):
         if location >= 0 and location < BINS:
             c[location] = c[location] + t[i]*g[j+2*binwith1*scal] / (scalf)
 
+
 #Slider implementation
 # hsigma = np.linspace(.01,.05,.005)
 # axsig = Slider(hsigma,'sigma',0.01,.05,.05)
@@ -85,6 +87,37 @@ plt.title("Convolved Energy Deposited in Plastic Scintilator by Eu-152 Decay Spe
 plt.plot(xf,c)
 plt.savefig("conv.png")
 plt.show()
+plt.close()
+# fig, ax = plt.subplots()
+# plt.subplots_adjust(left=0.25, bottom=0.25)
+# l,= plt.plot(xf,c,lw=2)
+# axsig = plt.axes([0.25, 0.1, 0.65, 0.03])
+# ssig = Slider(axsig,'Freq', 0.01, 0.05, valinit=sigma)
+# def update(val):
+#     s = ssig.val
+#     for k in range(0,4*binwith1*scal):
+#         g[k] = (1.0/np.sqrt(2.0*pi))*np.exp( -((xg[k]/s)**2)/2.0)
+#
+#     #Performing the convolution:
+#     for i in p(range(0,BINS,1)):
+#         for j in range(-2*binwith1*scal,2*binwith1*scal):
+#             location = i+j
+#             #Don't go outside the array:
+#             if location >= 0 and location < BINS:
+#                 c[location] = c[location] + t[i]*g[j+2*binwith1*scal] / (scalf)
+#     l.set_ydata(c)
+#     fig.canvas.draw_idle()
+# ssig.on_changed(update)
+#
+# resetax = plt.axes([0.8, 0.025, 0.1, 0.04])
+# button = Button(resetax, 'Reset', hovercolor='0.975')
+# def reset(event):
+#     ssig.reset()
+# button.on_clicked(reset)
+#
+# plt.show()
 
+#
+#button.on_clicked(reset)
 #Slider Implementation
 # def update (val):

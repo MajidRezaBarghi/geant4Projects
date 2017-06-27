@@ -1,11 +1,23 @@
 # Macro file for the visualization setting in the initialization phase
 # of the B1 example when running in interactive mode
-#
+# comment this when you want to enter virtual mode.
 
+# Set some default verbose
+/control/verbose 2
+/control/saveHistory
+/run/verbose 2
+#
+# Change the default number of threads (in multi-threaded mode)
+#/run/numberOfThreads 4
+#
+# Initialize kernel
+/run/initialize
+#
+# Visual
 # Use these open statements to open selected visualization
 #
 # Use this open statement to create an OpenGL view:
-#/vis/open OGL 600x600-0+0
+/vis/open OGL 600x600-0+0
 #
 # Use this open statement to create an OpenInventor view:
 #/vis/open OI
@@ -31,17 +43,17 @@
 /vis/drawVolume
 #
 # Specify view angle:
-#/vis/viewer/set/viewpointVector -1 0 0
-#/vis/viewer/set/lightsVector -1 0 0
+/vis/viewer/set/viewpointVector -1 0 0
+/vis/viewer/set/lightsVector -1 0 0
 #
 # Specify style (surface, wireframe, auxiliary edges,...)
-#/vis/viewer/set/style wireframe
-#/vis/viewer/set/auxiliaryEdge true
-#/vis/viewer/set/lineSegmentsPerCircle 100
+/vis/viewer/set/style wireframe
+/vis/viewer/set/auxiliaryEdge true
+/vis/viewer/set/lineSegmentsPerCircle 100
 #
 # Draw smooth trajectories at end of event, showing trajectory points
 # as markers 2 pixels wide:
-#/vis/scene/add/trajectories smooth
+/vis/scene/add/trajectories smooth
 /vis/modeling/trajectories/create/drawByCharge
 /vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
 /vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
@@ -51,20 +63,20 @@
 #/vis/scene/add/hits
 #
 # To draw only gammas:
-#/vis/filtering/trajectories/create/particleFilter
-#/vis/filtering/trajectories/particleFilter-0/add gamma
+/vis/filtering/trajectories/create/particleFilter
+/vis/filtering/trajectories/particleFilter-0/add gamma
 #
 # To invert the above, drawing all particles except gammas,
 # keep the above two lines but also add:
-#/vis/filtering/trajectories/particleFilter-0/invert true
+/vis/filtering/trajectories/particleFilter-0/invert true
 #
 # Many other options are available with /vis/modeling and /vis/filtering.
 # For example, to select colour by particle ID:
-#/vis/modeling/trajectories/create/drawByParticleID
-#/vis/modeling/trajectories/drawByParticleID-0/default/setDrawStepPts true
+/vis/modeling/trajectories/create/drawByParticleID
+/vis/modeling/trajectories/drawByParticleID-0/default/setDrawStepPts true
 # To select or override default colours (note: e+ is blue by default):
-#/vis/modeling/trajectories/list
-#/vis/modeling/trajectories/drawByParticleID-0/set e+ yellow
+/vis/modeling/trajectories/list
+/vis/modeling/trajectories/drawByParticleID-0/set e+ yellow
 #
 # To superimpose all of the events from a given run:
 /vis/scene/endOfEventAction accumulate

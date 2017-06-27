@@ -23,7 +23,6 @@ int main(int argc,char** argv)
   // Detect interactive mode (if no arguments) and define UI sessio
   // Choose the Random engine
   G4Random::setTheEngine(new CLHEP::RanecuEngine);
-
   // Construct the default run manager
   //
 #ifdef G4MULTITHREADED
@@ -53,12 +52,16 @@ int main(int argc,char** argv)
   //
   // batch mode
   //uncommnet to activetave display
-  //UImanager->ApplyCommand("/control/execute vis.mac");
-  G4String command = "/control/execute ";
-  G4String fileName = argv[1];
-  G4cout<< argv[0]<<"\n";
-  UImanager->ApplyCommand(command+fileName);
-
+  //+++++++++++++++++++++++++++++++++++++
+  //You are adding an -v command flag.
+  if (argv[1] == "-v"){
+    UImanager->ApplyCommand("/control/execute vis.mac");
+  }else{
+    G4String command = "/control/execute ";
+    G4String fileName = argv[1];
+    G4cout<<"Now Running " <<argv[0]<<"..."<<"\n";
+    UImanager->ApplyCommand(command+fileName);
+  }
   // Job termination
   // Free the store: user actions, physics_list and detector_description are
   // owned and deleted by the run manager, so they should not be deleted

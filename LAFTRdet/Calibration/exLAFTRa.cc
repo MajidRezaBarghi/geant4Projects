@@ -55,9 +55,9 @@ int main(int argc,char** argv)
   //+++++++++++++++++++++++++++++++++++++
   //You are adding an -v command flag.
   if (argv[1] == "-v"){
-    UImanager->ApplyCommand("/control/execute vis.mac");
+    UImanager->ApplyCommand("/control/execute scripts/vis.mac");
   }else{
-    G4String command = "/control/execute ";
+    G4String command = "/control/execute scripts/";
     G4String fileName = argv[1];
     G4cout<<"Now Running " <<argv[0]<<"..."<<"\n";
     UImanager->ApplyCommand(command+fileName);

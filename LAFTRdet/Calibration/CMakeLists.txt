@@ -46,15 +46,22 @@ target_link_libraries(exLAFTRa ${Geant4_LIBRARIES})
 set(EXAMPLEB1_SCRIPTS
   init_vis.mac
   vis.mac
-  )
+  run1.mac
+  run2.mac
+)
 
 foreach(_script ${EXAMPLEB1_SCRIPTS})
   configure_file(
-    ${PROJECT_SOURCE_DIR}/${_script}
-    ${PROJECT_BINARY_DIR}/${_script}
+    ${PROJECT_SOURCE_DIR}/scripts/${_script}
+    ${PROJECT_BINARY_DIR}/scripts/${_script}
     COPYONLY
     )
 endforeach()
+
+#The configure_files commands allows you to copy files from an input source to the output source.
+configure_file(${PROJECT_SOURCE_DIR}/RUN  ${PROJECT_BINARY_DIR}/RUN COPYONLY)
+configure_file(${PROJECT_SOURCE_DIR}/graphit.py  ${PROJECT_BINARY_DIR}/graphit.py COPYONLY)
+configure_file(${PROJECT_SOURCE_DIR}/cache/cachedfiles.txt ${PROJECT_BINARY_DIR}/cache/cachedfiles.txt COPYONLY)
 
 #----------------------------------------------------------------------------
 # For internal Geant4 use - but has no effect if you build this

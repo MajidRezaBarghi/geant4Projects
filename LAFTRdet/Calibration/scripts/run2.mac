@@ -1,0 +1,15 @@
+/gps/particle ion
+/gps/ion 55 132
+/gps/energy 0 keV
+#/gps/pos/type Plane
+#/gps/pos/shape Circle
+/gps/pos/type Surface
+/gps/pos/shape Sphere
+#/gps/pos/halfx 5 cm
+#/gps/pos/halfy 5 cm
+/gps/pos/radius 5.085 mm
+/gps/pos/centre 0 0 -50 mm
+#/gps/ang/type iso
+/gps/ang/surfnorm true
+#/gps/ang/
+/run/beamOn 100

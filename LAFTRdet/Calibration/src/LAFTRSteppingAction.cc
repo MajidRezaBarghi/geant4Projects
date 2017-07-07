@@ -20,13 +20,13 @@ LAFTRSteppingAction::LAFTRSteppingAction(LAFTREventAction* eventAction)
 : G4UserSteppingAction(),
   fEventAction(eventAction),
   fScoringVolume(0),fSiPmV(0)
-{myfile.open("test.txt");myfile<<"x\n";
+{
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 LAFTRSteppingAction::~LAFTRSteppingAction()
-{myfile.close();}
+{}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 

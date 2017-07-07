@@ -15,7 +15,6 @@ ofstream mySiPm;
 LAFTREventAction::LAFTREventAction(LAFTRRunAction* runAction)
 : G4UserEventAction(),fRunAction(runAction)
 {myfile1.open("../Calibration-build/events.txt");myfile1<<"energy\n";
-  mySiPm.open("SpectraOutput.txt");mySiPm<<"energy\n";
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -35,7 +34,7 @@ void LAFTREventAction::EndOfEventAction(const G4Event* event)
 {
   //int a = event->GetEventID();
   //G4cout<< tedep << G4endl;
-  if (fEdep > 500.0* keV){
+  if (fEdep > 50.0* keV){
     G4cout<< "Total energy deposited: ";
     G4cout<< G4BestUnit(fEdep, "Energy")<<"\r"<< std::flush;
     //std::this_thread::sleep_for (std::chrono::seconds(1));

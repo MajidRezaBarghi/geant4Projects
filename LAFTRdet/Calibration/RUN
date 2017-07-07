@@ -1,28 +1,26 @@
 #!/bin/bash
-WORD= "events-$1-$2.txt"
-TEST= grep $WORD cache/cachedfiles.txt
-if [ $TEST = $WORD ];then
- 	echo "It works"
-fi
-
-if [ "$1" != "-p" ];then
-	echo "running scripts and compiling data..."
-	make
-	echo "sucessfully compiled running GEAN4.."
-	sed -i "15s/run\/beamOn .*/run\/beamOn $1/" scripts/$2
-	./exLAFTRa $2
-	echo -ne '\n'
-	echo -ne "running python graphit.py.\r"
-	sleep 1
-	echo -ne "running python graphit.py..\r"
-	sleep 1
-	echo -ne "running python graphit.py...\r"
-	sleep 1
-	echo -ne '\n'
+NAME="events-$1-$2.txt"
+if [ $(find cache -name "$NAME") ];then
+	cp cache/$NAME events.txt
+else
+	if [ "$1" != "-p" ];then
+    echo "running scripts and compiling data..."
+    make
+    echo "sucessfully compiled running GEAN4.."
+    sed -i "15s/run\/beamOn .*/run\/beamOn $1/" scripts/$2
+    ./exLAFTRa $2
+    echo -ne '\n'
+    echo -ne "running python graphit.py.\r"
+    sleep 1
+    echo -ne "running python graphit.py..\r"
+    sleep 1
+    echo -ne "running python graphit.py...\r"
+    sleep 1
+		echo -ne '\n'
+	fi
 fi
 
 EVENTNUM= wc -l < cache/cachedfiles.txt
-NAME="events-$1-$2.txt"
 echo "$EVENTNUM"
 echo "$NAME" >> cache/cachedfiles.txt
 cp events.txt cache/$NAME

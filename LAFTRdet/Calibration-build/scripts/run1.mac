@@ -12,4 +12,4 @@
 #/gps/ang/type iso
 /gps/ang/surfnorm true
 #/gps/ang/
-/run/beamOn 400
+/run/beamOn 500

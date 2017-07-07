@@ -7,7 +7,6 @@ The program all runs by commands written in a bash script "RUN". This was done s
 mkdir ../Calibration-build
 cd ../Calibration-build
 cmake -DCMAKE_PREFIX_PATH=~/locationOfYourGeantInstallation /locationofCalibration
-cp ../Calibration/RUN . 
 ```
 3. Once cmake is done running you make now run the bash script RUN. The first argument is the number of events you wish to create in the simulation. The second argument will tell the script which macro file to use. Currently there are two macro files availible. 
 1. Eu-152 srouce run1.mac

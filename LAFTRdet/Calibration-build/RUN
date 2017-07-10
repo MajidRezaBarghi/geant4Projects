@@ -1,10 +1,15 @@
 #!/bin/bash
+#This will check if this command was typed in before and recalls that file from the cahche
 NAME="events-$1-$2.txt"
+rm events.txt
 if [ $(find cache -name "$NAME") ];then
 	cp cache/$NAME events.txt
 else
 	if [ "$1" != "-p" ];then
-    echo "running scripts and compiling data..."
+#If the command was never ran then Geant4 is called to create the new data to be stored in the cache
+#checks for the -p flag
+#if the -p flag skips the Geant4 code and recalls the most recently used data
+		echo "running scripts and compiling data..."
     make
     echo "sucessfully compiled running GEAN4.."
     sed -i "15s/run\/beamOn .*/run\/beamOn $1/" scripts/$2
@@ -19,9 +24,7 @@ else
 		echo -ne '\n'
 	fi
 fi
-
-EVENTNUM= wc -l < cache/cachedfiles.txt
-echo "$EVENTNUM"
+#saving the new file to cache need to place an if statement here--
 echo "$NAME" >> cache/cachedfiles.txt
 cp events.txt cache/$NAME
 python graphit.py

@@ -7,10 +7,12 @@
 from astropy.io  import ascii
 import matplotlib.pyplot as plt
 import numpy as np
-from matplotlib.widgets import Slider
-plt.switch_backend('qt5agg')
+from pyqtgraph.Qt import QtGui, QtCore
+import pyqtgraph as pg
+import scipy.integrate as integ
+#enable this if you want to the qt5 backend. The GUI is not usable so it must be disabled or commented out.
+# plt.switch_backend('qt5agg')
 from progressbar import ProgressBar
-# from matplotlib.widgets import Slider, Button, RadioButtons
 
 #setting up the progress bar
 p = ProgressBar()
@@ -23,7 +25,7 @@ display = False
 #getting the data
 data['energy'] = data['energy']*1000
 
-BINS = 200
+BINS = 600
 hist, n2bins = np.histogram(data['energy'],bins=BINS)
 #simple test histogram to show the output
 if display == True:
@@ -47,11 +49,11 @@ plt.bar(center,hist,width=width,align="center")
 binwith1 = 2
 
 # setting the constants for the Weierstrass transform
-sigma = .00021
+sigma = .021
 scal=240
 scalf=float(scal)
 pi = np.pi
-xf = np.linspace(50.0,n2bins[-1],BINS)
+xf = np.linspace(n2bins[0],n2bins[-1],BINS)
 xg=np.linspace(float(-2*binwith1),float(2*binwith1),4*binwith1*scal)
 g = xg*0.
 center = scal
@@ -67,18 +69,20 @@ for k in range(0,4*binwith1*scal):
     g[k] = (1.0/np.sqrt(2.0*pi))*np.exp( -((xg[k]/sigma)**2)/2.0)
 
 #Performing the convolution:
-for i in p(range(0,BINS,1)):
+aXb = 0.0011
+for i in range(0,BINS,1):
+    #updateing sigma because sigma is dependent on the energy.
+    sigma = aXb*np.sqrt(xf[i])
+    print xf[i]
+    for k in range(0,4*binwith1*scal):
+       g[k] = (1.0/sigma)*np.exp( -((xg[k]/sigma)**2)/2.0)
     for j in range(-2*binwith1*scal,2*binwith1*scal):
         location = i+j
         #Don't go outside the array:
         if location >= 0 and location < BINS:
             c[location] = c[location] + t[i]*g[j+2*binwith1*scal] / (scalf)
 
-
-#Slider implementation
-# hsigma = np.linspace(.01,.05,.005)
-# axsig = Slider(hsigma,'sigma',0.01,.05,.05)
-# Plot and save figures
+#Old MatPlotlib Graph interface
 plt.savefig("Results.png")
 plt.close()
 plt.ylabel("counts/keV")
@@ -86,38 +90,55 @@ plt.xlabel("Energy (keV)")
 plt.title("Convolved Energy Deposited in Plastic Scintilator by Cs-137 Decay Spectra")
 plt.plot(xf,c)
 plt.savefig("conv.png")
-plt.show()
 plt.close()
-# fig, ax = plt.subplots()
-# plt.subplots_adjust(left=0.25, bottom=0.25)
-# l,= plt.plot(xf,c,lw=2)
-# axsig = plt.axes([0.25, 0.1, 0.65, 0.03])
-# ssig = Slider(axsig,'Freq', 0.01, 0.05, valinit=sigma)
-# def update(val):
-#     s = ssig.val
-#     for k in range(0,4*binwith1*scal):
-#         g[k] = (1.0/np.sqrt(2.0*pi))*np.exp( -((xg[k]/s)**2)/2.0)
-#
-#     #Performing the convolution:
-#     for i in p(range(0,BINS,1)):
-#         for j in range(-2*binwith1*scal,2*binwith1*scal):
-#             location = i+j
-#             #Don't go outside the array:
-#             if location >= 0 and location < BINS:
-#                 c[location] = c[location] + t[i]*g[j+2*binwith1*scal] / (scalf)
-#     l.set_ydata(c)
-#     fig.canvas.draw_idle()
-# ssig.on_changed(update)
-#
-# resetax = plt.axes([0.8, 0.025, 0.1, 0.04])
-# button = Button(resetax, 'Reset', hovercolor='0.975')
-# def reset(event):
-#     ssig.reset()
-# button.on_clicked(reset)
-#
-# plt.show()
 
-#
-#button.on_clicked(reset)
-#Slider Implementation
-# def update (val):
+#This is where the GUI interface is implemented.
+app = QtGui.QApplication([]) # you need this to start the pyqt GUI
+win = pg.GraphicsWindow(title="Convolved Energy Deposited in Plastic Scintilator by Cs-137 Decay Spectra")
+win.resize(1000,600)
+plt1 = win.addPlot(title="Histogramed energy")
+plt2 = win.addPlot(title="Convolved Energy")
+plt2.setXRange(0,xf.max())
+plt2.setYRange(0,c.max())
+
+
+# Enable antialiasing for prettier plots
+pg.setConfigOptions(antialias=True)
+
+
+plt1.plot(n2bins, hist, stepMode=True, fillLevel=0, brush=(0,0,255,150))
+curve = plt2.plot(xf, c)
+
+
+# Addding a linear region with a label
+lr = pg.LinearRegionItem(values=[xf[0], 200])
+plt2.addItem(lr)
+label = pg.InfLineLabel(lr.lines[0], str(lr.getRegion()[1]), position=0.95, rotateAxis=(0,-1), anchor=(1, 1))
+restot = integ.simps(c, x=xf)
+label2 =  pg.InfLineLabel(lr.lines[0], str(lr.getRegion()[1]), position=0.75, rotateAxis=(0,-1), anchor=(1, 1))
+#This is where the horizonatal line that trakcs the curve is created.
+ypos  = c[np.logical_and(xf >= lr.getRegion()[1]-1, xf < lr.getRegion()[1])][0]
+cross = pg.InfiniteLine(pos=ypos, angle=0, pen=None, movable=False, bounds=None, hoverPen=None, label=None, labelOpts=None, name=None)
+plt2.addItem(cross)
+
+def update():
+    resx=xf[np.logical_and(xf>50.0, xf<lr.getRegion()[1])]
+    resc= c[np.logical_and(xf>50.0, xf<lr.getRegion()[1])]
+    res = integ.simps(resc,x=resx)/restot
+    ypos  = c[np.logical_and(xf >= lr.getRegion()[1]-1, xf < lr.getRegion()[1])][0]
+    cross.setPos(ypos)
+    print res
+    label2.setText(str(res))
+    label.setText(str(lr.getRegion()[1]))
+
+#setting the timmer to update the function every 10ms
+timer = QtCore.QTimer()
+timer.timeout.connect(update)
+timer.start(10)
+
+
+## Start Qt event loop unless running in interactive mode or using pyside.
+if __name__ == '__main__':
+    import sys
+    if (sys.flags.interactive != 1) or not hasattr(QtCore, 'PYQT_VERSION'):
+        QtGui.QApplication.instance().exec_()

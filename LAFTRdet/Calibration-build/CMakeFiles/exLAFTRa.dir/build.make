@@ -81,57 +81,9 @@ CMakeFiles/exLAFTRa.dir/exLAFTRa.cc.o.provides: CMakeFiles/exLAFTRa.dir/exLAFTRa
 CMakeFiles/exLAFTRa.dir/exLAFTRa.cc.o.provides.build: CMakeFiles/exLAFTRa.dir/exLAFTRa.cc.o
 
 
-CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.o: CMakeFiles/exLAFTRa.dir/flags.make
-CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.o: /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/EmStandardPhysics.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.o -c /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/EmStandardPhysics.cc
-
-CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/EmStandardPhysics.cc > CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.i
-
-CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/EmStandardPhysics.cc -o CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.s
-
-CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.o.requires:
-
-.PHONY : CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.o.requires
-
-CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.o.provides: CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.o.requires
-	$(MAKE) -f CMakeFiles/exLAFTRa.dir/build.make CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.o.provides.build
-.PHONY : CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.o.provides
-
-CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.o.provides.build: CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.o
-
-
-CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.o: CMakeFiles/exLAFTRa.dir/flags.make
-CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.o: /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/GammaPhysics.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.o -c /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/GammaPhysics.cc
-
-CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/GammaPhysics.cc > CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.i
-
-CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/GammaPhysics.cc -o CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.s
-
-CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.o.requires:
-
-.PHONY : CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.o.requires
-
-CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.o.provides: CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.o.requires
-	$(MAKE) -f CMakeFiles/exLAFTRa.dir/build.make CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.o.provides.build
-.PHONY : CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.o.provides
-
-CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.o.provides.build: CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.o
-
-
 CMakeFiles/exLAFTRa.dir/src/LAFTRActionInitiliazation.cc.o: CMakeFiles/exLAFTRa.dir/flags.make
 CMakeFiles/exLAFTRa.dir/src/LAFTRActionInitiliazation.cc.o: /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/LAFTRActionInitiliazation.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/exLAFTRa.dir/src/LAFTRActionInitiliazation.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/exLAFTRa.dir/src/LAFTRActionInitiliazation.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exLAFTRa.dir/src/LAFTRActionInitiliazation.cc.o -c /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/LAFTRActionInitiliazation.cc
 
 CMakeFiles/exLAFTRa.dir/src/LAFTRActionInitiliazation.cc.i: cmake_force
@@ -155,7 +107,7 @@ CMakeFiles/exLAFTRa.dir/src/LAFTRActionInitiliazation.cc.o.provides.build: CMake
 
 CMakeFiles/exLAFTRa.dir/src/LAFTRDetectorConstruction.cc.o: CMakeFiles/exLAFTRa.dir/flags.make
 CMakeFiles/exLAFTRa.dir/src/LAFTRDetectorConstruction.cc.o: /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/LAFTRDetectorConstruction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/exLAFTRa.dir/src/LAFTRDetectorConstruction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exLAFTRa.dir/src/LAFTRDetectorConstruction.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exLAFTRa.dir/src/LAFTRDetectorConstruction.cc.o -c /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/LAFTRDetectorConstruction.cc
 
 CMakeFiles/exLAFTRa.dir/src/LAFTRDetectorConstruction.cc.i: cmake_force
@@ -179,7 +131,7 @@ CMakeFiles/exLAFTRa.dir/src/LAFTRDetectorConstruction.cc.o.provides.build: CMake
 
 CMakeFiles/exLAFTRa.dir/src/LAFTREventAction.cc.o: CMakeFiles/exLAFTRa.dir/flags.make
 CMakeFiles/exLAFTRa.dir/src/LAFTREventAction.cc.o: /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/LAFTREventAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/exLAFTRa.dir/src/LAFTREventAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/exLAFTRa.dir/src/LAFTREventAction.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exLAFTRa.dir/src/LAFTREventAction.cc.o -c /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/LAFTREventAction.cc
 
 CMakeFiles/exLAFTRa.dir/src/LAFTREventAction.cc.i: cmake_force
@@ -203,7 +155,7 @@ CMakeFiles/exLAFTRa.dir/src/LAFTREventAction.cc.o.provides.build: CMakeFiles/exL
 
 CMakeFiles/exLAFTRa.dir/src/LAFTRPrimaryGeneratorAction.cc.o: CMakeFiles/exLAFTRa.dir/flags.make
 CMakeFiles/exLAFTRa.dir/src/LAFTRPrimaryGeneratorAction.cc.o: /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/LAFTRPrimaryGeneratorAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/exLAFTRa.dir/src/LAFTRPrimaryGeneratorAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/exLAFTRa.dir/src/LAFTRPrimaryGeneratorAction.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exLAFTRa.dir/src/LAFTRPrimaryGeneratorAction.cc.o -c /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/LAFTRPrimaryGeneratorAction.cc
 
 CMakeFiles/exLAFTRa.dir/src/LAFTRPrimaryGeneratorAction.cc.i: cmake_force
@@ -227,7 +179,7 @@ CMakeFiles/exLAFTRa.dir/src/LAFTRPrimaryGeneratorAction.cc.o.provides.build: CMa
 
 CMakeFiles/exLAFTRa.dir/src/LAFTRRunAction.cc.o: CMakeFiles/exLAFTRa.dir/flags.make
 CMakeFiles/exLAFTRa.dir/src/LAFTRRunAction.cc.o: /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/LAFTRRunAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/exLAFTRa.dir/src/LAFTRRunAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/exLAFTRa.dir/src/LAFTRRunAction.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exLAFTRa.dir/src/LAFTRRunAction.cc.o -c /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/LAFTRRunAction.cc
 
 CMakeFiles/exLAFTRa.dir/src/LAFTRRunAction.cc.i: cmake_force
@@ -251,7 +203,7 @@ CMakeFiles/exLAFTRa.dir/src/LAFTRRunAction.cc.o.provides.build: CMakeFiles/exLAF
 
 CMakeFiles/exLAFTRa.dir/src/LAFTRSteppingAction.cc.o: CMakeFiles/exLAFTRa.dir/flags.make
 CMakeFiles/exLAFTRa.dir/src/LAFTRSteppingAction.cc.o: /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/LAFTRSteppingAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/exLAFTRa.dir/src/LAFTRSteppingAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/exLAFTRa.dir/src/LAFTRSteppingAction.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exLAFTRa.dir/src/LAFTRSteppingAction.cc.o -c /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/LAFTRSteppingAction.cc
 
 CMakeFiles/exLAFTRa.dir/src/LAFTRSteppingAction.cc.i: cmake_force
@@ -275,7 +227,7 @@ CMakeFiles/exLAFTRa.dir/src/LAFTRSteppingAction.cc.o.provides.build: CMakeFiles/
 
 CMakeFiles/exLAFTRa.dir/src/LAFTRTrackingAction.cc.o: CMakeFiles/exLAFTRa.dir/flags.make
 CMakeFiles/exLAFTRa.dir/src/LAFTRTrackingAction.cc.o: /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/LAFTRTrackingAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/exLAFTRa.dir/src/LAFTRTrackingAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/exLAFTRa.dir/src/LAFTRTrackingAction.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exLAFTRa.dir/src/LAFTRTrackingAction.cc.o -c /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/LAFTRTrackingAction.cc
 
 CMakeFiles/exLAFTRa.dir/src/LAFTRTrackingAction.cc.i: cmake_force
@@ -299,7 +251,7 @@ CMakeFiles/exLAFTRa.dir/src/LAFTRTrackingAction.cc.o.provides.build: CMakeFiles/
 
 CMakeFiles/exLAFTRa.dir/src/PhysicsList.cc.o: CMakeFiles/exLAFTRa.dir/flags.make
 CMakeFiles/exLAFTRa.dir/src/PhysicsList.cc.o: /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/PhysicsList.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/exLAFTRa.dir/src/PhysicsList.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/exLAFTRa.dir/src/PhysicsList.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exLAFTRa.dir/src/PhysicsList.cc.o -c /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration/src/PhysicsList.cc
 
 CMakeFiles/exLAFTRa.dir/src/PhysicsList.cc.i: cmake_force
@@ -324,8 +276,6 @@ CMakeFiles/exLAFTRa.dir/src/PhysicsList.cc.o.provides.build: CMakeFiles/exLAFTRa
 # Object files for target exLAFTRa
 exLAFTRa_OBJECTS = \
 "CMakeFiles/exLAFTRa.dir/exLAFTRa.cc.o" \
-"CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.o" \
-"CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.o" \
 "CMakeFiles/exLAFTRa.dir/src/LAFTRActionInitiliazation.cc.o" \
 "CMakeFiles/exLAFTRa.dir/src/LAFTRDetectorConstruction.cc.o" \
 "CMakeFiles/exLAFTRa.dir/src/LAFTREventAction.cc.o" \
@@ -339,8 +289,6 @@ exLAFTRa_OBJECTS = \
 exLAFTRa_EXTERNAL_OBJECTS =
 
 exLAFTRa: CMakeFiles/exLAFTRa.dir/exLAFTRa.cc.o
-exLAFTRa: CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.o
-exLAFTRa: CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.o
 exLAFTRa: CMakeFiles/exLAFTRa.dir/src/LAFTRActionInitiliazation.cc.o
 exLAFTRa: CMakeFiles/exLAFTRa.dir/src/LAFTRDetectorConstruction.cc.o
 exLAFTRa: CMakeFiles/exLAFTRa.dir/src/LAFTREventAction.cc.o
@@ -389,7 +337,7 @@ exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4intercoms.so
 exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4global.so
 exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4clhep.so
 exLAFTRa: CMakeFiles/exLAFTRa.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable exLAFTRa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable exLAFTRa"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/exLAFTRa.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -397,9 +345,79 @@ CMakeFiles/exLAFTRa.dir/build: exLAFTRa
 
 .PHONY : CMakeFiles/exLAFTRa.dir/build
 
+# Object files for target exLAFTRa
+exLAFTRa_OBJECTS = \
+"CMakeFiles/exLAFTRa.dir/exLAFTRa.cc.o" \
+"CMakeFiles/exLAFTRa.dir/src/LAFTRActionInitiliazation.cc.o" \
+"CMakeFiles/exLAFTRa.dir/src/LAFTRDetectorConstruction.cc.o" \
+"CMakeFiles/exLAFTRa.dir/src/LAFTREventAction.cc.o" \
+"CMakeFiles/exLAFTRa.dir/src/LAFTRPrimaryGeneratorAction.cc.o" \
+"CMakeFiles/exLAFTRa.dir/src/LAFTRRunAction.cc.o" \
+"CMakeFiles/exLAFTRa.dir/src/LAFTRSteppingAction.cc.o" \
+"CMakeFiles/exLAFTRa.dir/src/LAFTRTrackingAction.cc.o" \
+"CMakeFiles/exLAFTRa.dir/src/PhysicsList.cc.o"
+
+# External object files for target exLAFTRa
+exLAFTRa_EXTERNAL_OBJECTS =
+
+CMakeFiles/CMakeRelink.dir/exLAFTRa: CMakeFiles/exLAFTRa.dir/exLAFTRa.cc.o
+CMakeFiles/CMakeRelink.dir/exLAFTRa: CMakeFiles/exLAFTRa.dir/src/LAFTRActionInitiliazation.cc.o
+CMakeFiles/CMakeRelink.dir/exLAFTRa: CMakeFiles/exLAFTRa.dir/src/LAFTRDetectorConstruction.cc.o
+CMakeFiles/CMakeRelink.dir/exLAFTRa: CMakeFiles/exLAFTRa.dir/src/LAFTREventAction.cc.o
+CMakeFiles/CMakeRelink.dir/exLAFTRa: CMakeFiles/exLAFTRa.dir/src/LAFTRPrimaryGeneratorAction.cc.o
+CMakeFiles/CMakeRelink.dir/exLAFTRa: CMakeFiles/exLAFTRa.dir/src/LAFTRRunAction.cc.o
+CMakeFiles/CMakeRelink.dir/exLAFTRa: CMakeFiles/exLAFTRa.dir/src/LAFTRSteppingAction.cc.o
+CMakeFiles/CMakeRelink.dir/exLAFTRa: CMakeFiles/exLAFTRa.dir/src/LAFTRTrackingAction.cc.o
+CMakeFiles/CMakeRelink.dir/exLAFTRa: CMakeFiles/exLAFTRa.dir/src/PhysicsList.cc.o
+CMakeFiles/CMakeRelink.dir/exLAFTRa: CMakeFiles/exLAFTRa.dir/build.make
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4Tree.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4GMocren.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4visHepRep.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4RayTracer.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4VRML.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4OpenGL.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4gl2ps.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4interfaces.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4persistency.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4analysis.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4error_propagation.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4readout.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4physicslists.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4parmodels.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4FR.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4vis_management.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4modeling.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /usr/lib64/libGL.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /usr/lib64/libSM.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /usr/lib64/libICE.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /usr/lib64/libX11.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /usr/lib64/libXext.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /usr/lib64/libXmu.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4run.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4event.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4tracking.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4processes.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4zlib.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /usr/lib64/libexpat.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4digits_hits.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4track.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4particles.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4geometry.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4materials.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4graphics_reps.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4intercoms.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4global.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: /home/rbarghi/geant4.10.3-install/lib64/libG4clhep.so
+CMakeFiles/CMakeRelink.dir/exLAFTRa: CMakeFiles/exLAFTRa.dir/relink.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable CMakeFiles/CMakeRelink.dir/exLAFTRa"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/exLAFTRa.dir/relink.txt --verbose=$(VERBOSE)
+
+# Rule to relink during preinstall.
+CMakeFiles/exLAFTRa.dir/preinstall: CMakeFiles/CMakeRelink.dir/exLAFTRa
+
+.PHONY : CMakeFiles/exLAFTRa.dir/preinstall
+
 CMakeFiles/exLAFTRa.dir/requires: CMakeFiles/exLAFTRa.dir/exLAFTRa.cc.o.requires
-CMakeFiles/exLAFTRa.dir/requires: CMakeFiles/exLAFTRa.dir/src/EmStandardPhysics.cc.o.requires
-CMakeFiles/exLAFTRa.dir/requires: CMakeFiles/exLAFTRa.dir/src/GammaPhysics.cc.o.requires
 CMakeFiles/exLAFTRa.dir/requires: CMakeFiles/exLAFTRa.dir/src/LAFTRActionInitiliazation.cc.o.requires
 CMakeFiles/exLAFTRa.dir/requires: CMakeFiles/exLAFTRa.dir/src/LAFTRDetectorConstruction.cc.o.requires
 CMakeFiles/exLAFTRa.dir/requires: CMakeFiles/exLAFTRa.dir/src/LAFTREventAction.cc.o.requires

@@ -41,13 +41,13 @@ PhysicsList::PhysicsList()
   SetVerboseLevel(1);
 
   // Default physics
-  RegisterPhysics(new G4DecayPhysics());
+  RegisterPhysics(new G4DecayPhysics(1));
 
   // Radioactive decay
-  RegisterPhysics(new G4RadioactiveDecayPhysics());
+  RegisterPhysics(new G4RadioactiveDecayPhysics(1));
 
   // EM physics
-  RegisterPhysics(new G4EmStandardPhysics());
+  RegisterPhysics(new G4EmStandardPhysics(1));
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -60,5 +60,7 @@ PhysicsList::~PhysicsList()
 
 void PhysicsList::SetCuts()
 {
-  G4VUserPhysicsList::SetCuts();
+  //G4VUserPhysicsList::SetCuts();
+  SetCutsWithDefault();
+
 }

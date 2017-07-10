@@ -48,7 +48,10 @@ set(EXAMPLEB1_SCRIPTS
   vis.mac
   run1.mac
   run2.mac
+  run3.mac
 )
+
+#copying all the scripts to binary directory
 
 foreach(_script ${EXAMPLEB1_SCRIPTS})
   configure_file(

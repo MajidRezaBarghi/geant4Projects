@@ -1,8 +1,7 @@
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles/install.dir
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles/list_install_components.dir
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles/rebuild_cache.dir
-/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles/edit_cache.dir
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles/exLAFTRa.dir
+/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles/edit_cache.dir
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles/LAFTRa.dir
-/home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles/install/strip.dir
 /home/rbarghi/Dropbox/geant4Projects/LAFTRdet/Calibration-build/CMakeFiles/install/local.dir

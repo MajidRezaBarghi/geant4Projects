@@ -1,5 +1,5 @@
 # About 
-The program all runs by commands written in a bash script "RUN". This was done so testing can be done quicker and through one command because there multiple sripts to run written in several diffirent languages. Feel free to operate diffirent componenents of the program. For just Geant Simulations run the exLAFTRa.
+The program all runs by commands written in a bash script "RUN". This was done so testing can be done quicker and through one command because there multiple sripts to run written in several diffirent languages. Feel free to operate diffirent componenents of the program. For just Geant Simulations run the exLAFTRa. A chache has been implemented for previously parameters as well.
 # How to run
 1. Create a seperate directory outside of Calibration called Calibration-build
 2. Use cmake to create a makefile to compile exLATRa. Now you need to copy the RUN bash file which will run and compile all the code 
@@ -7,7 +7,6 @@ The program all runs by commands written in a bash script "RUN". This was done s
 mkdir ../Calibration-build
 cd ../Calibration-build
 cmake -DCMAKE_PREFIX_PATH=~/locationOfYourGeantInstallation /locationofCalibration
-cp ../Calibration/RUN . 
 ```
 3. Once cmake is done running you make now run the bash script RUN. The first argument is the number of events you wish to create in the simulation. The second argument will tell the script which macro file to use. Currently there are two macro files availible. 
 1. Eu-152 srouce run1.mac

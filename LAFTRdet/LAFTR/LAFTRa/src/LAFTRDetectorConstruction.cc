@@ -58,7 +58,7 @@ G4VPhysicalVolume* LAFTRDetectorConstruction::Construct()
 //This is also where I create the Scintalator itself.
   G4double innerRadius = 0.0*mm;
   G4double outerRadius = 12.085*mm;
-  G4double hz = 36.60*mm;
+  G4double hz = 18.30*mm;
   G4double startAngle = 0.0*deg;
   G4double spanningAngle = 360.0*deg;
 

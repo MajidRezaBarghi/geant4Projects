@@ -37,11 +37,11 @@
 /vis/scene/notifyHandlers
 /vis/set/colour
 /vis/set/lineWidth
-/vis/scene/add/text 0 6 -4 cm 18 4 4 Shape1
+/vis/scene/add/text 0 6 -4 cm 18 4 4 Plastic Scintilator
 /vis/scene/notifyHandlers
-/vis/scene/add/text 6 7 10 cm 18 4 4 Shape2
+/vis/scene/add/text 6 7 10 cm 18 4 4 Air
 /vis/scene/notifyHandlers
-/vis/geometry/set/visibility World 0 false
+/vis/geometry/set/visibility World 0 True
 /vis/scene/notifyHandlers
 /vis/geometry/set/visibility Scint 0 true
 /vis/scene/notifyHandlers
@@ -66,5 +66,40 @@
 /event/verbose 0
 /vis/viewer/zoom .25
 /vis/viewer/refresh
-/run/beamOn 10000
+/vis/viewer/set/style wireframe
+/vis/viewer/refresh
+/vis/viewer/zoom 1.5
+/vis/viewer/refresh
+/vis/viewer/zoom 1.5
+/vis/viewer/refresh
+/vis/viewer/zoom 1.5
+/vis/viewer/refresh
+/vis/viewer/zoom 1.5
+/vis/viewer/refresh
+/vis/viewer/zoom 1.5
+/vis/viewer/refresh
+/vis/viewer/zoom 1.5
+/vis/viewer/refresh
+/vis/viewer/zoom 1.5
+/vis/viewer/refresh
+/vis/viewer/zoom 1.5
+/vis/viewer/refresh
+/vis/viewer/zoom 1.5
+/vis/viewer/refresh
+/vis/viewer/zoom 1.5
+/vis/viewer/refresh
+/vis/viewer/zoom 1.5
+/vis/viewer/refresh
+/vis/viewer/zoom 1.5
+/vis/viewer/refresh
+/vis/viewer/zoom 1.5
+/vis/viewer/refresh
+/vis/viewer/zoom 1.5
+/vis/viewer/refresh
+/vis/viewer/zoom .5
+/vis/viewer/refresh
+/run/beamOn 100
 /vis/scene/notifyHandlers scene-0
+/run/beamOn .5
+/vis/viewer/zoom .5
+/vis/viewer/refresh
